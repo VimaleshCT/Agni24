@@ -1,15 +1,27 @@
-import { useRef } from "react";
 import styles from "./Carousel.module.scss";
-import { ReactComponent as PointerIcon } from "../media/icons/right.svg";
-import { ReactComponent as NarrowArrowIcon } from "../media/icons/narrow-arrow.svg";
-import cx from "classnames";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { useRef, useEffect, useState } from "react";
 
-const CarouselCard = ({ imgSrc, name, position, roles = [] }) => {
+const CarouselCard = ({
+  imgSrc,
+  name,
+  position,
+  roles = [],
+  instagramLink,
+  linkedinLink,
+}) => {
   return (
     <div className={styles["card-wrapper"]}>
       <article className={styles.card}>
         <figure className={styles["card-visual"]}>
-          <img src={imgSrc} alt={name} />
+          <img
+            src={imgSrc}
+            alt={name}
+            onError={(e) => {
+              e.target.src = "path/to/fallback/image.jpg"; // Add your fallback image path here
+            }}
+          />
         </figure>
         <main className={styles["card-content"]}>
           <h3 className={styles["card-heading"]}>{name}</h3>
@@ -24,6 +36,18 @@ const CarouselCard = ({ imgSrc, name, position, roles = [] }) => {
               ))}
             </ul>
           )}
+          <div className={styles["card-links"]}>
+            {instagramLink && (
+              <a href={instagramLink} target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faInstagram} />
+              </a>
+            )}
+            {linkedinLink && (
+              <a href={linkedinLink} target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faLinkedin} />
+              </a>
+            )}
+          </div>
         </main>
       </article>
     </div>
@@ -31,99 +55,78 @@ const CarouselCard = ({ imgSrc, name, position, roles = [] }) => {
 };
 
 const Carousel = ({ cardsList = [] }) => {
-  const cursorRef = useRef(null);
-  const parentRef = useRef(null);
   const cardsWrapperRef = useRef(null);
+  const [cursorVisible, setCursorVisible] = useState(false);
+  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
 
-  const handleCursorTransit = (type) => {
-    if (type === "enter") {
-      cursorRef.current.classList.add(styles["-visible"]);
-    } else {
-      cursorRef.current.classList.remove(styles["-visible"]);
-    }
-  };
-
-  const handleCursorMove = (posX, posY) => {
-    const bounds = parentRef.current.getBoundingClientRect();
-
-    cursorRef.current.style.transform = `translate3D(${posX - bounds.left}px, ${
-      posY - bounds.top
-    }px, 0)`;
-
-    if (posX - bounds.left < bounds.width / 2) {
-      cursorRef.current.classList.add(styles["-rotate"]);
-    } else {
-      cursorRef.current.classList.remove(styles["-rotate"]);
-    }
-  };
-
-  const slideCarousel = (e) => {
-    e.preventDefault();
-    const bounds = parentRef.current.getBoundingClientRect();
-    let transitDir = "prev";
-    if (e.clientX - bounds.left < bounds.width / 2) {
-      transitDir = "prev";
-    } else {
-      transitDir = "next";
-    }
+  const slideCarousel = (direction) => {
     const cardsContainer = cardsWrapperRef.current;
     cardsContainer.classList.add(styles["-sliding"]);
-    cardsContainer.classList.add(
-      transitDir === "next" ? styles["-transit-right"] : styles["-transit-left"]
-    );
+
+    if (direction === "next") {
+      cardsContainer.appendChild(
+        cardsContainer.removeChild(cardsContainer.firstChild)
+      );
+    } else {
+      cardsContainer.prepend(
+        cardsContainer.removeChild(cardsContainer.lastChild)
+      );
+    }
 
     setTimeout(() => {
       cardsContainer.classList.remove(styles["-sliding"]);
-      if (transitDir === "next") {
-        cardsContainer.appendChild(
-          cardsContainer.removeChild(cardsContainer.firstChild)
-        );
-      } else {
-        cardsContainer.prepend(
-          cardsContainer.removeChild(cardsContainer.lastChild)
-        );
-      }
-      cardsContainer.classList.remove(
-        transitDir === "next"
-          ? styles["-transit-right"]
-          : styles["-transit-left"]
-      );
     }, 300);
+  };
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      slideCarousel("next");
+    }, 4000);
+
+    return () => clearInterval(intervalId);
+  }, []);
+
+  // Handle mouse movement for custom cursor
+  const handleMouseMove = (e) => {
+    setCursorVisible(true);
+    setCursorPosition({ x: e.clientX, y: e.clientY });
+  };
+
+  const handleMouseLeave = () => {
+    setCursorVisible(false);
   };
 
   return (
     <div
       className={styles.carousel}
-      ref={parentRef}
-      onMouseEnter={(e) => handleCursorTransit("enter")}
-      onMouseLeave={(e) => handleCursorTransit("leave")}
-      onMouseMove={(e) => handleCursorMove(e.clientX, e.clientY)}
+      onMouseMove={handleMouseMove}
+      onMouseLeave={handleMouseLeave}
     >
-      <div
-        className={styles["c-cards-wrapper"]}
-        ref={cardsWrapperRef}
-        onClick={slideCarousel}
-      >
+      <div className={styles["c-cards-wrapper"]} ref={cardsWrapperRef}>
         {cardsList.map((card, i) => (
           <CarouselCard key={i} {...card} />
         ))}
       </div>
-      <div className={cx(styles["mobile-arrows"], "container")}>
-        <div className={styles.dir}>
-          <NarrowArrowIcon />
-        </div>
-        <div className={styles.dir}>
-          <NarrowArrowIcon />
-        </div>
-      </div>
-
-      <div
-        ref={cursorRef}
-        className={styles["c-gallery-cursor"]}
-        aria-label="next/previous"
+      {cursorVisible && (
+        <div
+          className={styles["c-gallery-cursor"]}
+          style={{ left: cursorPosition.x, top: cursorPosition.y }}
+        />
+      )}
+      <button
+        className={styles["arrow-left"]}
+        onClick={() => slideCarousel("prev")}
+        aria-label="Previous Slide"
       >
-        <PointerIcon />
-      </div>
+        &#8249; {/* Left arrow symbol */}
+      </button>
+      <button
+        className={styles["arrow-right"]}
+        onClick={() => slideCarousel("next")}
+        aria-label="Next Slide"
+      >
+        &#8250; {/* Right arrow symbol */}
+      </button>
     </div>
   );
 };

@@ -57,7 +57,7 @@ const Footer = () => {
                   className={styles.handle}
                   target="_blank"
                   rel="noreferrer"
-                  href="https://www.facebook.com/techofes.in"
+                  href="https://www.facebook.com/atulyamnitap"
                 >
                   <svg
                     role="presentation"
@@ -89,7 +89,7 @@ const Footer = () => {
                   className={styles.handle}
                   target="_blank"
                   rel="noreferrer"
-                  href="mailto:saasceg@gmail.com"
+                  href="mailto:saasceg25@gmail.com"
                 >
                   <MailIcon />
                 </a>
@@ -134,7 +134,7 @@ const Footer = () => {
                 setDevTeam(!devTeam);
               }}
             >
-              Technical Design (SAAS)
+              Technical Design SAAS
             </button>
           </span>
           <span className={styles.sep}>~</span>
@@ -146,9 +146,9 @@ const Footer = () => {
                   className={cx("link", styles.ln)}
                   target="_blank"
                   rel="noreferrer"
-                  href="https://github.com/tripathics"
+                  href="https://github.com/VimaleshCT"
                 >
-                  @tripathics
+                  @VimaleshCT
                 </a>
               </li>
               <li>
@@ -156,9 +156,9 @@ const Footer = () => {
                   className={cx("link", styles.ln)}
                   target="_blank"
                   rel="noreferrer"
-                  href="https://github.com/pursottam6003"
+                  href="https://github.com/VikrantRamesh"
                 >
-                  @pursottam6003
+                  @VikrantRamesh
                 </a>
               </li>
               <li>

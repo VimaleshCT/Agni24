@@ -45,9 +45,7 @@ const Home = ({ user }) => {
     >
       <Hero />
       <section className={cx(styles["intro-section"], styles["home-section"])}>
-        <div className={styles["intro-bg"]}>
-          <img className={styles["intro-bg"]} src={WaterImage} alt="" />
-        </div>
+        <div className={styles["intro-bg"]}></div>
         <header
           className={cx(styles.introContent, styles.sectionHeader, "container")}
         >
