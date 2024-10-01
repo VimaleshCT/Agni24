@@ -7,6 +7,7 @@ import { ReactComponent as ScheduleIcon } from "../media/icons/schedule.svg";
 import { ReactComponent as LinkIcon } from "../media/icons/link.svg";
 import Carousel from "../components/Carousel";
 import HighlightCard from "../components/HighlightCard";
+import Sparks from "../components/Sparks";
 
 import {
   events,
@@ -43,6 +44,7 @@ const Home = ({ user }) => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
+      <Sparks />
       <Hero />
       <section className={cx(styles["intro-section"], styles["home-section"])}>
         <div className={styles["intro-bg"]}></div>

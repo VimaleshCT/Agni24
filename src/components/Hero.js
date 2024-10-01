@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import CountdownTimer from "./CountdownTimer";
 import { eventStartDate } from "../data/data";
 import { ReactComponent as ScrollDownIcon } from '../media/icons/down.svg';
-import HeroVideo from '../media/fiyahhh.mp4';
+import HeroVideo from '../assets/fire.mp4';
 import HeroImage from '../media/hero-image.png';
 import styles from './Hero.module.scss';
 

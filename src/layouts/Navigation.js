@@ -8,16 +8,28 @@ const links = [
   { link: '/gallery', name: 'Gallery' },
   { link: '/register', name: 'Register', auth: true },
   { link: '/user', name: 'Profile', auth: true },
-]
+];
 
 const NavItem = ({ name, link, handleClick }) => (
-  <NavLink to={link} onClick={handleClick} className={state => cx(
-    styles['router-link'], 'link',
-    { [styles.active]: state.isActive }
-  )}>
-    {name}
-  </NavLink>
-)
+  <div className={styles.navItemContainer}>
+    <NavLink
+      to={link}
+      onClick={handleClick}
+      className={state => cx(
+        styles['router-link'], 'link',
+        { [styles.active]: state.isActive }
+      )}
+    >
+      {name}
+    </NavLink>
+    <div className={styles.container}>
+      <div className={styles.corpus}>
+        <div className={ styles['diamond-right']}></div>
+        <div className={styles.diamond + ' ' + styles['diamond-inner'] + ' ' + styles['diamond-left']}></div>
+      </div>
+    </div>
+  </div>
+);
 
 const Navigation = ({ user }) => {
   const toggleMobileNav = () => {
@@ -25,14 +37,14 @@ const Navigation = ({ user }) => {
     const mobileNavBtns = document.querySelectorAll(`.${styles['mobile-hamburger-btn']}`);
     mobileNavBtns.forEach(btn => {
       btn.classList.toggle(styles.active);
-    })
+    });
     mobileNav.classList.toggle(styles.active);
     if (mobileNav.classList.contains(styles.active)) {
       document.body.style.overflow = 'hidden';
     } else {
       document.body.style.overflow = 'auto';
     }
-  }
+  };
 
   return (
     <header>
@@ -77,7 +89,7 @@ const Navigation = ({ user }) => {
         </div>
       </nav>
     </header>
-  )
-}
+  );
+};
 
 export default Navigation;
