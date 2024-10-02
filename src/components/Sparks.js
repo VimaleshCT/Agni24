@@ -2,12 +2,12 @@ import React, { useEffect, useRef } from 'react';
 import './Sparks.module.scss';
 
 const config = {
-  sparkFreq: 1,
+  sparkFreq: 0.8,
   meanSparkWidth: 10,
   meanSparkHeight: 10,
   meanSparkLife: 200,
-  meanSparkVelocity: [2, 100],
-  sparkSizeVariation: 2,
+  meanSparkVelocity: [2, 20], // Horizontal velocity configuration
+  sparkSizeVariation: 15,
   sparkBlink: 10,
   floorHeight: 0.15,
 };
@@ -23,7 +23,7 @@ class Fire {
   }
 
   spark(x) {
-    this.sparks.push(new Spark(this.ctx, x, this.canvas.height, this.config, this.scrollY)); // Pass scrollY to sparks
+    this.sparks.push(new Spark(this.ctx, x, -10, this.config, this.scrollY)); // Start above the canvas
   }
 
   updateColor() {
@@ -49,13 +49,11 @@ class Fire {
 class Spark {
   constructor(ctx, x, y, config, scrollY) {
     this.ctx = ctx;
-    this.pos = [x, y];
-    this.width =
-      config.meanSparkWidth + (Math.random() - 0.5) * config.sparkSizeVariation;
-    this.height = config.meanSparkHeight;
+    this.pos = [x, y]; // Initial y is set above the canvas
+    this.radius = (config.meanSparkWidth + (Math.random() - 0.5) * config.sparkSizeVariation) / 2; // Use radius instead of width/height
     this.v = [
-      config.meanSparkVelocity[0] * (Math.random() - 0.5),
-      -1 * config.meanSparkVelocity[1] * Math.random(),
+      config.meanSparkVelocity[0] * (Math.random() - 0.5), // Horizontal velocity
+      config.meanSparkVelocity[1] * Math.random(), // Set positive vertical velocity for downward motion
     ];
     this.c = [
       Math.floor(Math.random() * 155) + 100,
@@ -82,8 +80,10 @@ class Spark {
   update(scrollY) {
     this.move();
     if (!(this.life--)) return true;
+
+    // Draw a circular spark
     this.ctx.beginPath();
-    this.ctx.rect(this.pos[0], this.pos[1], this.width, this.height);
+    this.ctx.arc(this.pos[0], this.pos[1], this.radius, 0, Math.PI * 2); // Use arc for circle
     this.ctx.fillStyle = `rgba(${this.c[0]}, ${this.c[1]}, ${this.c[2]}, ${this.getAlpha(scrollY)})`; // Use scrollY for alpha
     this.ctx.fill();
   }
