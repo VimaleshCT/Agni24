@@ -13,7 +13,6 @@ const Hero = () => {
     const navEl = document.getElementById('nav');
     const heroEl = document.getElementById('hero');
     const heroLogoLetters = document.querySelectorAll('.shouldAnimate');
-    const coordinatorNames = document.getElementById('coordinatorsList');
 
     const parallaxAnimate = () => {
       // animate hero logo letters
@@ -25,10 +24,6 @@ const Hero = () => {
         const shift = Math.abs(3 - i) * speed * (offsetTop - el.getBoundingClientRect().top);
         el.style.transform = 'translate3d(0, ' + shift.toFixed(3) + 'px, 0)';
       }
-
-      // parallax animate coordinators
-      let coordNamesTopOffset = coordinatorNames.getBoundingClientRect().top;
-      coordinatorNames.style.transform = 'translate3d(0, ' + speed * coordNamesTopOffset.toFixed(3) + 'px, 0)';
     }
 
     const observer = new IntersectionObserver(entries => {
