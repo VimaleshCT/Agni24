@@ -1,5 +1,5 @@
 // ----- All sections ----- COMMON
-body{
+body {
   overflow-x: hidden;
 }
 
@@ -27,7 +27,9 @@ body{
     }
   }
 
-  $heading-font-size: var(--heading-font-size); // Define a variable for font size
+  $heading-font-size: var(
+    --heading-font-size
+  ); // Define a variable for font size
   .heading {
     font-family: "Antonio", sans-serif;
     color: #fff;
@@ -41,33 +43,41 @@ body{
     width: 100%;
     max-width: fit-content;
     transform: translateX(-0.15ch);
-  
+
     // Background animation styles
     background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
     background-size: cover;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    
+
     // Define animation properties with vendor prefixes
     -webkit-animation: animated 75s linear infinite;
     -moz-animation: animated 75s linear infinite; // For Firefox
     -o-animation: animated 75s linear infinite; // For Opera
     animation: animated 75s linear infinite;
-    
+
     -webkit-transform: translate3d(0, 0, 0);
-  
+
     @-webkit-keyframes animated {
-      0% { background-position: 0% 50%; }
-      100% { background-position: 100% 50%; }
+      0% {
+        background-position: 0% 50%;
+      }
+      100% {
+        background-position: 100% 50%;
+      }
     }
-  
+
     @keyframes animated {
-      0% { background-position: 0% 50%; }
-      100% { background-position: 100% 50%; }
+      0% {
+        background-position: 0% 50%;
+      }
+      100% {
+        background-position: 100% 50%;
+      }
     }
   }
-  
+
   @media screen and (max-width: 999px) {
     --heading-font-size: 20vw;
   }
@@ -98,8 +108,6 @@ body{
     min-height: unset;
     padding-bottom: 2rem;
   }
-
-  padding-top: calc(var(--nav-height) + 3rem);
   --heading-font-size: 18vw;
 
   @media screen and (max-width: 999px) {
@@ -117,9 +125,8 @@ body{
     padding: 0;
   }
 
-
   .parallax-image {
-    background-image: url('../assets/elements.jpg'); // Use the imported image here
+    background-image: url("../assets/elements.jpg"); // Use the imported image here
     background-size: cover;
     background-attachment: fixed; // This is what creates the parallax effect
     background-position: center;
@@ -143,20 +150,20 @@ body{
     font-size: 2rem; // Increase the size of the entire tagline
     line-height: 1.4;
     color: #fff;
-    font-weight:900;
+    font-weight: 900;
     position: absolute;
     width: 300px;
-    text-shadow: 0 0 0.3rem black ;
+    text-shadow: 0 0 0.3rem black;
     bottom: calc(((0.6 * var(--heading-font-size)) - 96px) / 2);
     left: calc((1.14 * var(--heading-font-size)) - 150px);
     transform: translateY(3rem);
     color: #ee5100;
 
     .bold {
-      font-weight:bolder; // Make text bolder
-      text-shadow: 0 0 0.5rem black ;
-      font-size:3.2rem; // Increase size for bold text
-      font-family:  'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-weight: bolder; // Make text bolder
+      text-shadow: 0 0 0.5rem black;
+      font-size: 3.2rem; // Increase size for bold text
+      font-family: "Lucida Grande", "Lucida Sans", Arial, sans-serif;
     }
   }
 
@@ -171,7 +178,7 @@ body{
   .intro-bg {
     user-select: none;
     pointer-events: none;
-    overflow-y:hidden;
+    overflow-y: hidden;
     position: absolute;
     top: 0;
     left: 0;
@@ -510,7 +517,6 @@ body{
     }
   }
 }
-
 
 .intro-bg {
   position: absolute;
