@@ -4,11 +4,11 @@ import cx from "classnames";
 import agniLogo from "../assets/agni.png";
 
 const links = [
-  { link: "/", name: "Home", onlyMobile: true },
-  { link: "/events", name: "What's on" },
-  { link: "/gallery", name: "Gallery" },
-  { link: "/register", name: "Register", auth: true },
-  { link: "/user", name: "Profile", auth: true },
+  { link: '/', name: 'Home', onlyMobile: true },
+  { link: '/events', name: 'What\'s on' },
+  { link: '/merchandise', name: 'Merchandise' },
+  { link: '/register', name: 'Register', auth: true },
+  { link: '/user', name: 'Profile', auth: true },
 ];
 
 const NavItem = ({ name, link, handleClick }) => (

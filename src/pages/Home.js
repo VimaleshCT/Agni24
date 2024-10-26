@@ -44,7 +44,7 @@ const Home = ({ user }) => {
                 Agni'24 in reels
               </span>
               <span className={cx("btn-text", styles["intro-btn-text"])}>
-                Gallery
+                Merchandise 
               </span>
               <LinkIcon />
             </NavLink>

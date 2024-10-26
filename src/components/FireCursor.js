@@ -1,11 +1,14 @@
-import React, { useEffect, useRef } from "react";
-import styles from "./FireCursor.module.scss";
+import React, { useEffect, useRef } from 'react';
+import styles from './FireCursor.module.scss'; // Importing SCSS module
 
 const FireCursor = () => {
   const circlesRef = useRef([]); // Reference for circles
   const coords = useRef({ x: 0, y: 0 }); // Coordinates
 
   useEffect(() => {
+    const circles = circlesRef.current; // Get circles from the ref
+
+    // Define colors for the circles
     const colors = [
       "#ffb56b",
       "#fdaf69",
@@ -83,15 +86,18 @@ const FireCursor = () => {
         });
       }
 
-      requestAnimationFrame(animateCircles);
+      requestAnimationFrame(animateCircles); // Request next animation frame
     };
 
-    animateCircles();
 
+    animateCircles(); // Start the animation
+
+    // Cleanup event listener on component unmount
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
     };
   }, []);
+
 
   return (
     <div className={styles.circlesContainer}>
