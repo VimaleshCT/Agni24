@@ -41,7 +41,7 @@ const Home = ({ user }) => {
               style={{ '--hover-bg': '#ee5100' }}
             >
               <span className={cx("btn-subtitle", styles["intro-btn-subtitle"])}>
-                Agni'24 in reels
+                Agni'24 
               </span>
               <span className={cx("btn-text", styles["intro-btn-text"])}>
                 Merchandise 
