@@ -26,25 +26,32 @@ const Home = ({ user }) => {
         <div className={styles["intro-bg"]}>
           <div className={styles["parallax-image"]}></div>
         </div>
-        <header className={cx(styles.introContent, styles.sectionHeader, "container")}>
+        <header
+          className={cx(styles.introContent, styles.sectionHeader, "container")}
+        >
           <h2 className={styles.heading}>
-            <span style={{ marginRight: "3ch", marginLeft: "2ch"}}>Agni</span>
+            <span style={{ marginRight: "3ch", marginLeft: "2ch" }}>Agni</span>
             <span className={styles._ar}>2024</span>
           </h2>
           <p className={styles.subtitle}>
-            Unleash<br/> <span className={styles.bold}>The Elements</span>  <br/>and embrace<br/> <span className={styles.bold}>The Fest</span>
+            Unleash
+            <br /> <span className={styles.bold}>The Elements</span> <br />
+            and embrace
+            <br /> <span className={styles.bold}>The Fest</span>
           </p>
           <div className={styles["header-btn-wrapper"]}>
             <NavLink
-              to="/gallery"
+              to="/merchandise"
               className={cx("btn", styles["intro-header-btn"])}
-              style={{ '--hover-bg': '#ee5100' }}
+              style={{ "--hover-bg": "#ee5100" }}
             >
-              <span className={cx("btn-subtitle", styles["intro-btn-subtitle"])}>
-                Agni'24 
+              <span
+                className={cx("btn-subtitle", styles["intro-btn-subtitle"])}
+              >
+                Agni'24
               </span>
               <span className={cx("btn-text", styles["intro-btn-text"])}>
-                Merchandise 
+                Merchandise
               </span>
               <LinkIcon />
             </NavLink>
@@ -85,7 +92,9 @@ const Home = ({ user }) => {
       <section className={cx(styles["home-section"], styles.coordinators)}>
         <header className={cx(styles.sectionHeader, "container")}>
           <h2 className={styles.heading}>
-            <span style={{ marginRight: "3ch", fontSize: '8rem' }}>Our Team</span>
+            <span style={{ marginRight: "3ch", fontSize: "8rem" }}>
+              Our Team
+            </span>
           </h2>
         </header>
         <main>

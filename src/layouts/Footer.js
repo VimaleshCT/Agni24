@@ -123,7 +123,7 @@ const Footer = () => {
       <div className={styles.copyright}>
         <div className={styles.team}>
           <span>
-            Handcrafted with 🖤 by
+            Handcrafted with ❤️ by
             <button
               className={cx(styles.devteamBtn, {
                 [styles.on]: devTeam,
