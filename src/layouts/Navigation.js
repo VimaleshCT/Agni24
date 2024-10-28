@@ -41,20 +41,23 @@ const NavItem = ({ name, link, handleClick }) => (
 
 const Navigation = ({ user }) => {
   const toggleMobileNav = () => {
-    const mobileNav = document.querySelector(`.${styles.mobile}`);
+    const mobileNav = document.querySelector(`[class*="${styles.mobile}"]`);
     const mobileNavBtns = document.querySelectorAll(
-      `.${styles["mobile-hamburger-btn"]}`
+      `[class*="${styles["mobile-hamburger-btn"]}"]`
     );
+  
     mobileNavBtns.forEach((btn) => {
       btn.classList.toggle(styles.active);
     });
-    mobileNav.classList.toggle(styles.active);
-    if (mobileNav.classList.contains(styles.active)) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "auto";
+  
+    if (mobileNav) {
+      mobileNav.classList.toggle(styles.active);
+      document.body.style.overflow = mobileNav.classList.contains(styles.active)
+        ? "hidden"
+        : "auto";
     }
   };
+  
 
   return (
     <header>
