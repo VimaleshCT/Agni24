@@ -100,7 +100,6 @@ body {
   position: relative;
   overflow: hidden;
   min-height: 100vh;
-  background-color: #000;
 
   @media screen and (max-width: 700px) {
     padding-left: 0.8rem;
@@ -153,7 +152,6 @@ body {
     font-weight: 900;
     position: absolute;
     width: 300px;
-    text-shadow: 0 0 0.3rem black;
     bottom: calc(((0.6 * var(--heading-font-size)) - 96px) / 2);
     left: calc((1.14 * var(--heading-font-size)) - 150px);
     transform: translateY(3rem);
@@ -161,7 +159,6 @@ body {
 
     .bold {
       font-weight: bolder; // Make text bolder
-      text-shadow: 0 0 0.5rem black;
       font-size: 3.2rem; // Increase size for bold text
       font-family: "Lucida Grande", "Lucida Sans", Arial, sans-serif;
     }
