@@ -27,7 +27,7 @@ import download26 from "../assets/team/T_Ponvel_Graphics Design.jpg";
 import download27 from "../assets/team/Sujatha_GDesign.jpg";
 import download28 from "../assets/team/Dineshraja D_Permissions & Documentation.jpg";
 
-export const eventStartDate = "OCT 24, 2024 :00:00";
+export const eventStartDate = "NOV 8, 2024 :15:00";
 
 export const coordinators = [
   {
@@ -1180,7 +1180,7 @@ export const events2 = {
     title: "Opening Act",
     figureSrc: "/media/events/opening.jpg",
     day: 2,
-    time: "After Mr. and Ms. AGNI",
+    time: "Mr. and Ms. AGNI",
     venue: "Main Stage",
     desc: "",
     type: "Event",

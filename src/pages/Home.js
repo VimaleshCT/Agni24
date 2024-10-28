@@ -1,3 +1,4 @@
+import React from "react";
 import { NavLink } from "react-router-dom";
 import cx from "classnames";
 import styles from "../styles/Home.module.scss";
@@ -22,10 +23,8 @@ const Home = ({ user }) => {
       <Sparks />
       <Hero />
 
+      {/* Intro Section */}
       <section className={cx(styles["intro-section"], styles["home-section"])}>
-        <div className={styles["intro-bg"]}>
-          <div className={styles["parallax-image"]}></div>
-        </div>
         <header
           className={cx(styles.introContent, styles.sectionHeader, "container")}
         >

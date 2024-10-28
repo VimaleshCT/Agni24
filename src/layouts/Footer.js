@@ -111,13 +111,6 @@ const Footer = () => {
             <br />
             <span>for your support</span>
           </div>
-          <div>
-            <img
-              src={bye}
-              style={{ height: "160px", width: "auto" }}
-              alt=""
-            ></img>
-          </div>
         </div>
       </div>
       <div className={styles.copyright}>

@@ -4,11 +4,10 @@ import cx from "classnames";
 import agniLogo from "../assets/agni.png";
 
 const links = [
-  { link: '/', name: 'Home', onlyMobile: true },
-  { link: '/events', name: 'What\'s on' },
-  { link: '/merchandise', name: 'Merchandise' },
-  { link: '/register', name: 'Register', auth: true },
-  { link: '/user', name: 'Profile', auth: true },
+  { link: "/", name: "Home", onlyMobile: true },
+  { link: "/events", name: "What's on" },
+  { link: "/merchandise", name: "Merchandise" },
+  { link: "/Sponsor", name: "Sponsor" },
 ];
 
 const NavItem = ({ name, link, handleClick }) => (
@@ -45,11 +44,11 @@ const Navigation = ({ user }) => {
     const mobileNavBtns = document.querySelectorAll(
       `[class*="${styles["mobile-hamburger-btn"]}"]`
     );
-  
+
     mobileNavBtns.forEach((btn) => {
       btn.classList.toggle(styles.active);
     });
-  
+
     if (mobileNav) {
       mobileNav.classList.toggle(styles.active);
       document.body.style.overflow = mobileNav.classList.contains(styles.active)
@@ -57,7 +56,6 @@ const Navigation = ({ user }) => {
         : "auto";
     }
   };
-  
 
   return (
     <header>
@@ -74,8 +72,6 @@ const Navigation = ({ user }) => {
             .map((link) => (
               <NavItem key={link.name} {...link} />
             ))}
-          {!user.user && <NavItem link="/signup" name="Register" />}
-          {user.user && user.admin && <NavItem link="/admin" name="Admin" />}
         </div>
         <button
           aria-label="Menu"
@@ -128,7 +124,7 @@ const Navigation = ({ user }) => {
             </li>
           )}
         </ul>
-        <div className={styles["nav-footer"]}>&copy;2023 Atulyam NITAP</div>
+        <div className={styles["nav-footer"]}>&copy;SAAS 2024-25 </div>
       </nav>
     </header>
   );

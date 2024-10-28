@@ -45,7 +45,7 @@
       z-index: 10;
       font-weight: 700;
       margin-left: 2rem;
-      font-size: 0.75rem;
+      font-size: 1.35rem;
       position: relative; /* Ensure diamonds are positioned relative to this link */
 
       &:hover .container {
@@ -297,13 +297,13 @@
 }
 
 .logoImage {
-  height: 60px;
-  width: 80px;
+  height: 95px;
+  width: 130px;
 }
 
-
 // Add a media query to hide diamonds in mobile view
-@media (max-width: 768px) { // Adjust this width to match your mobile breakpoint
+@media (max-width: 768px) {
+  // Adjust this width to match your mobile breakpoint
   .diamond-right,
   .diamond,
   .diamond-inner {
