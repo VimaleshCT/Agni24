@@ -63,7 +63,6 @@ const Navigation = ({ user }) => {
         <div className={styles.logo}>
           <NavLink to="/">
             <img src={agniLogo} alt="Agni Logo" className={styles.logoImage} />{" "}
-            {/* Add the logo image */}
           </NavLink>
         </div>
         <div className={cx(styles["router-links"], styles.desktop)}>
