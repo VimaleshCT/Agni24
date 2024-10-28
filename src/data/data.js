@@ -904,16 +904,14 @@ export const events = {
   50: {
     id: "50",
     slotId: "6",
-    title: "Solo Song",
+    title: "Concert Night",
     figureSrc: "/media/events/singing.jpeg",
     day: 2,
-    time: "14:00",
+    time: "18:30",
     venue: "Main Stage",
     desc: "",
     type: "Contest",
     highlight: true,
-    isRegistrationOpen: false,
-    solo: true,
     rules: "https://github.com/nit-ap/atulyam/blob/main/README.md",
   },
   24: {
