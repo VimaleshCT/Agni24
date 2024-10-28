@@ -11,6 +11,15 @@
   align-items: center;
   overflow: hidden;
   z-index: 1;
+
+  /* Adjust padding on smaller screens */
+  @media (max-width: 768px) {
+    padding: 1.5rem;
+  }
+
+  @media (max-width: 480px) {
+    padding: 1rem;
+  }
 }
 
 .video-background {
@@ -35,6 +44,15 @@
   margin-bottom: 1rem;
   color: #f9a602;
   animation: slideDown 1s ease forwards;
+
+  /* Responsive font size for "Coming Soon" text */
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.8rem;
+  }
 }
 
 .message {
@@ -42,6 +60,15 @@
   margin-bottom: 2rem;
   opacity: 0.8;
   animation: fadeIn 2s ease forwards;
+
+  /* Responsive font size for the message */
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 0.9rem;
+  }
 }
 
 .animated-coming-soon {
@@ -49,12 +76,26 @@
   gap: 1rem;
   justify-content: center;
   animation: pulse 2s infinite;
+
+  /* Adjust gap between letters for smaller screens */
+  @media (max-width: 480px) {
+    gap: 0.5rem;
+  }
 }
 
 .animated-coming-soon span {
   font-size: 3rem;
   font-weight: bold;
   letter-spacing: 2px;
+
+  /* Responsive font size for animated text */
+  @media (max-width: 768px) {
+    font-size: 2.5rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 2rem;
+  }
 }
 
 .coming {

@@ -301,9 +301,32 @@
 }
 
 .logoImage {
-  // margin-top: 2.5rem;
   height: 95px;
   width: 120px;
+
+  /* Tablet view */
+  @media (max-width: 1024px) {
+    height: 80px;
+    width: 100px;
+  }
+
+  /* Mobile view */
+  @media (max-width: 768px) {
+    height: 70px;
+    width: 90px;
+  }
+
+  /* Small mobile view */
+  @media (max-width: 480px) {
+    height: 60px;
+    width: 80px;
+  }
+
+  /* Extra small mobile view */
+  @media (max-width: 360px) {
+    height: 50px;
+    width: 70px;
+  }
 }
 
 // Add a media query to hide diamonds in mobile view

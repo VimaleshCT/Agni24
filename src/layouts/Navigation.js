@@ -104,24 +104,6 @@ const Navigation = ({ user }) => {
                 <NavItem handleClick={toggleMobileNav} {...link} />
               </li>
             ))}
-          {!user.user && (
-            <li key="noauth">
-              <NavItem
-                handleClick={toggleMobileNav}
-                link="/signup"
-                name="Register"
-              />
-            </li>
-          )}
-          {user.user && user.admin && (
-            <li key="admin">
-              <NavItem
-                handleClick={toggleMobileNav}
-                link="/admin"
-                name="Admin"
-              />
-            </li>
-          )}
         </ul>
         <div className={styles["nav-footer"]}>&copy;SAAS 2024-25 </div>
       </nav>
