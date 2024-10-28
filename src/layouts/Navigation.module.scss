@@ -300,3 +300,13 @@
   height: 60px;
   width: 80px;
 }
+
+
+// Add a media query to hide diamonds in mobile view
+@media (max-width: 768px) { // Adjust this width to match your mobile breakpoint
+  .diamond-right,
+  .diamond,
+  .diamond-inner {
+    display: none;
+  }
+}

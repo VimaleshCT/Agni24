@@ -7,7 +7,7 @@ import { ReactComponent as ScheduleIcon } from "../media/icons/schedule.svg";
 import { ReactComponent as LinkIcon } from "../media/icons/link.svg";
 import Carousel from "../components/Carousel";
 import HighlightCard from "../components/HighlightCard";
-import { events, highlights, mainCoordinators } from "../data/data";
+import { events2, highlights, mainCoordinators } from "../data/data";
 import Hero from "../components/Hero";
 import { motion } from "framer-motion";
 
@@ -48,7 +48,7 @@ const Home = ({ user }) => {
               <span
                 className={cx("btn-subtitle", styles["intro-btn-subtitle"])}
               >
-                Agni'24
+                Agni'24 in reels
               </span>
               <span className={cx("btn-text", styles["intro-btn-text"])}>
                 Merchandise
@@ -71,7 +71,7 @@ const Home = ({ user }) => {
         <main>
           <div className={styles.hlgallery}>
             {(highlights || []).map((id) => (
-              <HighlightCard user={user} key={id} {...events[id]} />
+              <HighlightCard user={user} key={id} {...events2[id]} />
             ))}
             <div className={styles["btn-wrapper"]}>
               <NavLink to="/events" className="btn">

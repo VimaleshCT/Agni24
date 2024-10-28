@@ -16,7 +16,7 @@
   .header-subtitle {
     padding-top: 0.5rem;
 
-    color:#ffffff;
+    color: #ffffff;
     font-family: "Antonio", sans-serif;
     letter-spacing: -0.15ch;
     line-height: 1;
@@ -67,7 +67,6 @@
   }
 }
 
-
 .gallery {
   display: flex;
   flex-direction: column;
@@ -85,10 +84,15 @@
   padding: 2rem;
   border: 0.5rem solid #171232d1; // Slightly transparent border for softer look
   border-radius: 16px; // Increased radius for smoother edges
-  background: rgba(255, 255, 255, 0.2); // Semi-transparent white background for glass effect
+  background: rgba(
+    255,
+    255,
+    255,
+    0.2
+  ); // Semi-transparent white background for glass effect
   backdrop-filter: blur(10px) saturate(150%); // Frosted effect with blur and saturation
-  box-shadow: 
-    inset 0 0 10px rgba(15, 111, 190, 0.3), // Inset shadow for depth
+  box-shadow: inset 0 0 10px rgba(15, 111, 190, 0.3),
+    // Inset shadow for depth
     0 4px 20px rgba(0, 0, 0, 0.1); // Outer shadow for floating effect
 
   // Adding a subtle glossy overlay
@@ -96,13 +100,17 @@
   overflow: hidden;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0));
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0)
+    );
     opacity: 0.3;
     pointer-events: none; // Prevents interfering with content
   }
@@ -159,7 +167,7 @@
     }
     padding: 0 0.1rem;
   }
-  
+
   .buy-button {
     background-color: #ffffff;
     color: #0d5da3;
@@ -168,7 +176,7 @@
     border-radius: 20px;
     cursor: pointer;
     font-size: 1.5rem;
-    font-weight:bolder;
+    font-weight: bolder;
     transition: background-color 0.3s ease;
     text-decoration: none;
 
@@ -178,7 +186,6 @@
     }
   }
 }
-
 
 .video-background {
   position: absolute;
@@ -196,7 +203,7 @@
   object-fit: cover;
 }
 
-.amount{
+.amount {
   color: #fff;
   font-size: 2rem;
 
