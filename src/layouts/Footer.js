@@ -12,7 +12,7 @@ const Footer = () => {
   const [devTeam, setDevTeam] = useState(false);
 
   return (
-    <footer className="container">
+    <footer className="container" style={{ padding: 0, paddingTop: "1rem" }}>
       <div className={styles.MainFooterContent}>
         <div className={cx(styles.footerItems)} id="footerContent">
           <div className={styles.QuotesContainer}>
