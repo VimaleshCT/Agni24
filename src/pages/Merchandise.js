@@ -45,6 +45,10 @@ const Merchandise = ({ user }) => {
               className={styles["merch-image"]}
             />
             <div className={styles["merch-description"]}>
+              <h2 className={styles["title-gradient"]}>
+                Concert Night T-Shirt
+              </h2>
+
               <h2 style={{ fontSize: "1.9rem" }}>
                 Wear the spirit of festivity at concert night!
               </h2>
@@ -57,6 +61,17 @@ const Merchandise = ({ user }) => {
                 </b>{" "}
                 T-shirts <b className={styles["amount"]}>@Rs 699/- </b>
               </h6>
+              <h6
+                style={{
+                  fontWeight: "normal",
+                  color: "#81DAE3",
+                  fontSize: "1.7rem",
+                  textTransform: "uppercase",
+                  fontWeight: 900,
+                }}
+              >
+                Wear the T-shirt and meet our singers on concert day!
+              </h6>
               <a
                 href="https://forms.gle/4D2iDxLyZyMdPwSd6"
                 target="_blank"
@@ -68,7 +83,7 @@ const Merchandise = ({ user }) => {
 
               <h6 style={{ fontWeight: "normal", fontSize: "1rem" }}>
                 <b>Last Date for Registration:</b>{" "}
-                <b className={styles["amount"]} style={{ fontSize: "1rem" }}>
+                <b className={styles["amount"]} style={{ fontSize: "2rem" }}>
                   Oct 31st 2024
                 </b>
                 <br />
