@@ -985,7 +985,7 @@ export const events2 = {
     id: "2",
     slotId: "0",
     title: "Movie Screening",
-    figureSrc: "/media/events/film-making.jpg",
+    figureSrc: "/media/events/theatre.jpg",
     day: 0,
     time: "07:30",
     venue: "Gallery",
