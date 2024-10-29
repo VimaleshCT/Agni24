@@ -19,25 +19,14 @@ function AnimatedRoutes({
   updateAuthUserAttr,
   handleLogout,
   checkingStatus,
+  loading,
 }) {
   const location = useLocation();
-  const [loading, setLoading] = useState(true); // Track loading state
-
-  // Stop loading after preloader is complete
-  const handlePreloaderComplete = () => {
-    setLoading(false);
-  };
-
-  // This effect can be adjusted to simulate loading time or based on actual asset loading
-  useEffect(() => {
-    // Optionally, you could set a timeout for loading or wait for actual data load
-    setTimeout(() => setLoading(false), 3000); // Adjust the time as needed
-  }, []);
 
   return (
     <AnimatePresence mode="wait">
       {loading ? (
-        <Preloader onComplete={handlePreloaderComplete} /> // Display Preloader if loading
+        <Preloader /> // Display Preloader if loading
       ) : (
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Home user={authUser.user} />} />
