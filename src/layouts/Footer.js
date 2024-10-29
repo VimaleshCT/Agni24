@@ -1,5 +1,5 @@
 import styles from "../styles/Footer.module.scss";
-import logo from "../media/logo/atulyamLogo.png";
+import logo from "../assets/agni.png";
 import echoOfArunachal from "../media/logo/echo_arunachal.png";
 import hotelObsidianBlue from "../media/logo/hotel-obsidian-blue.png";
 import bye from "../media/bye.png";
@@ -12,7 +12,7 @@ const Footer = () => {
   const [devTeam, setDevTeam] = useState(false);
 
   return (
-    <footer className="container">
+    <footer className="container" style={{ padding: 0, paddingTop: "1rem" }}>
       <div className={styles.MainFooterContent}>
         <div className={cx(styles.footerItems)} id="footerContent">
           <div className={styles.QuotesContainer}>
@@ -25,7 +25,6 @@ const Footer = () => {
           <div>
             <div className={styles.LogoContainer}>
               <img src={logo} alt=""></img>
-              <div className={styles.title}>AGNI'24</div>
             </div>
           </div>
           <div className={styles["sponsor-wrapper"]}>
@@ -34,7 +33,7 @@ const Footer = () => {
                 Our Sponsors
               </p>
               <div className={styles.sponsorImgs}>
-                <img
+                {/* <img
                   className={styles.sponsors}
                   src={echoOfArunachal}
                   alt=""
@@ -43,7 +42,7 @@ const Footer = () => {
                   className={styles.sponsors}
                   src={hotelObsidianBlue}
                   alt=""
-                ></img>
+                ></img> */}
               </div>
             </div>
           </div>
@@ -57,7 +56,7 @@ const Footer = () => {
                   className={styles.handle}
                   target="_blank"
                   rel="noreferrer"
-                  href="https://www.facebook.com/atulyamnitap"
+                  href="https://www.facebook.com/techofes.co.in"
                 >
                   <svg
                     role="presentation"
@@ -99,7 +98,7 @@ const Footer = () => {
                   className={styles.handle}
                   target="_blank"
                   rel="noreferrer"
-                  href="https://chat.whatsapp.com/HmcowbF1mbG7DRJxti4X4X"
+                  href="https://whatsapp.com/channel/0029VaE66JJ9xVJeMj7E8M08"
                 >
                   <WAIcon />
                 </a>
@@ -112,19 +111,12 @@ const Footer = () => {
             <br />
             <span>for your support</span>
           </div>
-          <div>
-            <img
-              src={bye}
-              style={{ height: "160px", width: "auto" }}
-              alt=""
-            ></img>
-          </div>
         </div>
       </div>
       <div className={styles.copyright}>
         <div className={styles.team}>
           <span>
-            Handcrafted with 🖤 by
+            Handcrafted with ❤️ by
             <button
               className={cx(styles.devteamBtn, {
                 [styles.on]: devTeam,
@@ -159,16 +151,6 @@ const Footer = () => {
                   href="https://github.com/VikrantRamesh"
                 >
                   @VikrantRamesh
-                </a>
-              </li>
-              <li>
-                <a
-                  className={cx("link", styles.ln)}
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://github.com/daknya"
-                >
-                  @daknya
                 </a>
               </li>
             </ul>

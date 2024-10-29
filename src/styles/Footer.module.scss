@@ -1,16 +1,16 @@
 footer {
-  --text-FooterColor: rgb(69, 39, 39);
+  --text-FooterColor: rgba(70, 240, 218, 0.84);
   position: relative;
   color: var(--text-FooterColor);
   padding-top: 3rem;
   padding-bottom: 1rem;
   font-family: "Roboto", sans-serif;
   letter-spacing: -0.15ch;
-  z-index:10;
+  z-index: 0;
 
   &::before {
     content: "";
-    background-image: url("../assets/Footer.jpg");
+    background-image: url("../assets/footer1.jpg");
     background-size: cover;
     background-position: center;
     opacity: 0.5;
@@ -71,7 +71,7 @@ footer {
   > img {
     width: 250px;
     height: auto;
-    filter: invert(100%);
+    // filter: invert(100%);
     max-width: 100%;
     display: block;
     margin: auto;
@@ -109,6 +109,7 @@ footer {
   height: 100%;
   width: 100%;
   max-width: 1000px;
+  padding: 0 1rem;
   margin: auto;
   justify-content: space-around;
 
@@ -172,7 +173,7 @@ footer {
     margin-right: 1rem;
 
     .handle {
-      border: 1px solid black;
+      border: 1px solid rgb(64, 231, 237);
       border-radius: 50%;
       display: block;
       position: relative;
@@ -209,15 +210,17 @@ footer {
 }
 
 .copyright {
+  background-color: rgb(64 206 189);
   font-family: "Roboto", sans-serif;
-  color: rgb(57, 36, 36);
+  color: rgb(0, 0, 0);
   font-size: 0.95rem;
-  padding: 0.8rem 0;
+  padding: 0.5rem 0;
+  margin-top: 1rem;
   text-align: center;
   letter-spacing: 0ch;
 
   p {
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.3rem;
   }
 
   .ln {
@@ -237,7 +240,7 @@ footer {
       background-color: transparent;
       border: none;
       margin: 0 0.25rem;
-      color: #e76f51;
+      color: #b75313;
       position: relative;
       display: inline-block;
       text-decoration: none;
@@ -275,11 +278,8 @@ footer {
     .devteamBtn.on::before {
       background: linear-gradient(
         90deg,
-        rgba(185, 209, 42, 0.5532286212914486) 0%,
-        rgba(37, 112, 189, 1) 0%,
-        rgba(82, 163, 154, 1) 100%,
-        rgba(155, 167, 69, 1) 100%,
-        rgba(74, 104, 161, 1) 100%
+        rgba(52, 221, 228, 1) 49%,
+        rgba(0, 212, 255, 1) 100%
       );
       top: 0;
       height: 100%;
@@ -290,12 +290,11 @@ footer {
   .devteam {
     padding: 0.4rem;
     border-radius: 0.25rem;
-    background: linear-gradient(
-      90deg,
-      rgba(70, 81, 117, 1) 0%,
-      rgba(26, 108, 235, 1) 50%,
-      rgba(73, 168, 239, 1) 100%,
-      rgba(252, 176, 69, 1) 100%
+    background: radial-gradient(
+      circle,
+      rgba(255, 180, 214, 1) 0%,
+      rgba(202, 198, 255, 1) 53%,
+      rgba(145, 230, 247, 1) 100%
     );
     text-align: left;
     display: none;

@@ -1,0 +1,151 @@
+.container {
+  position: relative;
+  text-align: center;
+  padding: 2rem;
+  color: #fff;
+  background-color: #0d0d0d;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  z-index: 1;
+
+  /* Adjust padding on smaller screens */
+  @media (max-width: 768px) {
+    padding: 1.5rem;
+  }
+
+  @media (max-width: 480px) {
+    padding: 1rem;
+  }
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
+}
+
+.coming-soon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #f9a602;
+  animation: slideDown 1s ease forwards;
+
+  /* Responsive font size for "Coming Soon" text */
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.8rem;
+  }
+}
+
+.message {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.8;
+  animation: fadeIn 2s ease forwards;
+
+  /* Responsive font size for the message */
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 0.9rem;
+  }
+}
+
+.animated-coming-soon {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  animation: pulse 2s infinite;
+
+  /* Adjust gap between letters for smaller screens */
+  @media (max-width: 480px) {
+    gap: 0.5rem;
+  }
+}
+
+.animated-coming-soon span {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+
+  /* Responsive font size for animated text */
+  @media (max-width: 768px) {
+    font-size: 2.5rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 2rem;
+  }
+}
+
+.coming {
+  color: #ff6347;
+  animation: colorChange 1.5s infinite;
+}
+
+.soon {
+  color: #f9a602;
+  animation: colorChange 1.5s infinite alternate;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes colorChange {
+  0% {
+    color: #ff6347;
+  }
+  50% {
+    color: #f9a602;
+  }
+  100% {
+    color: #ff6347;
+  }
+}
