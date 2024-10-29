@@ -475,8 +475,13 @@ export const events = {
   2: {
     id: "2",
     slotId: "0",
+<<<<<<< Updated upstream
     title: "Short Film Shooting",
     figureSrc: "/media/events/film-making.jpeg",
+=======
+    title: "Movie Screening",
+    figureSrc: "/media/events/theatre.jpg",
+>>>>>>> Stashed changes
     day: 0,
     time: "11:15",
     venue: "Mechanical Block 2nd floor",
