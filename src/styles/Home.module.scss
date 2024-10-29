@@ -25,6 +25,22 @@ body {
     ._ac {
       text-align: center;
     }
+
+    .agni {
+      margin-right: 3ch;
+      margin-left: 2ch;
+    }
+
+    @media (max-width: 600px) {
+      /* Adjust the max-width as needed for phone view */
+      .agni {
+        margin-right: 5ch;
+        margin-left: 2ch;
+      }
+      ._ar {
+        text-align: center;
+      }
+    }
   }
 
   $heading-font-size: var(
@@ -259,7 +275,7 @@ body {
         }
         .intro-btn-text {
           color: #000;
-          font-size: 1.2rem;
+          font-size: 0.8rem;
         }
         > svg {
           width: 1.2rem;

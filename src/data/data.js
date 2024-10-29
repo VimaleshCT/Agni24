@@ -203,8 +203,9 @@ export const coordinators = [
     img: download24,
     name: "Vikrant Ramesh",
     position: "Technical Design",
-    instagramLink: "https://instagram.com/example1",
-    linkedinLink: "https://linkedin.com/in/example1",
+    instagramLink: "https://instagram.com/vikrant_ramesh",
+    linkedinLink:
+      "https://linkedin.com/in/www.linkedin.com/in/vikrant-ramesh-046061190",
   },
   {
     img: download25,
@@ -410,8 +411,8 @@ export const mainCoordinators = [
     imgSrc: download24,
     name: "Vikrant Ramesh",
     position: "Technical Design",
-    instagramLink: "https://instagram.com/example1",
-    linkedinLink: "https://linkedin.com/in/example1",
+    instagramLink: "https://instagram.com/vikrant__ramesh",
+    linkedinLink: "https://www.linkedin.com/in/vikrant-ramesh-046061190",
   },
   {
     imgSrc: download25,

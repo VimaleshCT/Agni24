@@ -12,9 +12,16 @@ function App() {
   const { checkingStatus, authUser, updateAuthUserAttr } = useAuthStatus();
   const [alertMsg, setAlertMsg] = useState("");
   const [alertSeverity, setAlertSeverity] = useState("info");
+  const [loading, setLoading] = useState(true); // Track loading state
+
+  // Stop loading after preloader is complete
+  const handlePreloaderComplete = () => {
+    setLoading(false);
+  };
 
   const handleLogout = (alertMsg, alertType) => {
-    auth.signOut()
+    auth
+      .signOut()
       .then(() => {
         if (alertMsg) {
           setAlertMsg(alertMsg, alertType);
@@ -36,13 +43,18 @@ function App() {
   }, [alertMsg]);
 
   return (
-    <Layout user={authUser}>
+    <Layout
+      user={authUser}
+      onComplete={handlePreloaderComplete}
+      loading={loading}
+    >
       <Alert message={alertMsg} severity={alertSeverity} />
       <AnimatedRoutes
         authUser={authUser}
         handleLogout={handleLogout}
         updateAuthUserAttr={updateAuthUserAttr}
         checkingStatus={checkingStatus}
+        loading={loading}
       />
     </Layout>
   );

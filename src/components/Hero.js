@@ -10,7 +10,7 @@ const Hero = () => {
   const [isLive, setIsLive] = useState(false);
 
   useEffect(() => {
-    const navEl = document.getElementById("nav");
+    const navEl = document.getElementById("nav")
     const heroEl = document.getElementById("hero");
     const heroLogoLetters = document.querySelectorAll(".shouldAnimate");
 
