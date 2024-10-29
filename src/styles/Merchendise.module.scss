@@ -220,7 +220,7 @@
 }
 .title-gradient {
   font-size: 1.9rem;
-  background: linear-gradient(135deg, #3bf6ed, #17e7f9);
+  background: linear-gradient(135deg, #10ee44, #17f979);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -231,10 +231,10 @@
 /* Optional Glow Animation */
 @keyframes gradientGlow {
   0% {
-    text-shadow: 0 0 5px #74d4ec, 0 0 10px #bec3d2;
+    text-shadow: 0 0 5px #52f805, 0 0 10px #1ee19d;
   }
   100% {
-    text-shadow: 0 0 15px #3ad0e1, 0 0 20px #16efc3;
+    text-shadow: 0 0 15px #21f1a5, 0 0 20px #3ff50c;
   }
 }
 
@@ -247,10 +247,10 @@ h6 {
 
 @keyframes gradientGlow {
   0% {
-    text-shadow: 0 0 5px #3b82f6, 0 0 10px #1e40af, 0 0 15px #3b82f6;
+    text-shadow: 0 0 5px #3bf65d, 0 0 10px #0de8d6, 0 0 15px #6bee0e;
   }
   100% {
-    text-shadow: 0 0 15px #1e40af, 0 0 20px #3b82f6, 0 0 25px #1e40af;
+    text-shadow: 0 0 15px #07f703, 0 0 20px #03ffb8, 0 0 25px #43eb15;
   }
 }
 
