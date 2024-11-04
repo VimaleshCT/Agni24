@@ -64,7 +64,7 @@ const Merchandise = ({ user }) => {
               <h6
                 style={{
                   fontWeight: "normal",
-                  color: "#81DAE3",
+                  color: "#D2FF72",
                   fontSize: "1.7rem",
                   textTransform: "uppercase",
                   fontWeight: 900,

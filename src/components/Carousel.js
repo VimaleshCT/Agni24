@@ -81,7 +81,7 @@ const Carousel = ({ cardsList = [] }) => {
   useEffect(() => {
     const intervalId = setInterval(() => {
       slideCarousel("next");
-    }, 4000);
+    }, 2000);
 
     return () => clearInterval(intervalId);
   }, []);
