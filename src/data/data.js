@@ -1211,9 +1211,9 @@ A rapid-fire question-and-answer session. Questions are asked to a team, and if 
     id: "50",
     slotId: "6",
     title: "Concert Night",
-    figureSrc: "/media/events/dj.jpeg",
+    figureSrc: "/media/events/singing.jpeg",
     day: 1,
-    time: "6.30 P.M – 9.30 P.M ",
+    time: "06:30 P.M - 09.30 P.M",
     venue: "Main Stage",
     desc: "",
     type: "Contest",
@@ -1224,6 +1224,7 @@ A rapid-fire question-and-answer session. Questions are asked to a team, and if 
     time: "10:30 A.M – 12:30 P.M",
     title: "QA Pop Culture Showdown (R1)",
     venue: "Red Building LH-74",
+
     day: 2,
     desc: `
 A fun, new school take on Family Feud. Students team up with their friends (4 or 5 in a team) and participate in this rolling event.<br/>
@@ -2039,15 +2040,11 @@ export const events2 = {
     title: "Concert Night",
     figureSrc: "/media/events/singing.jpeg",
     day: 1,
-    time: "06:30",
+    time: "06:30 P.M - 09.30 P.M",
     venue: "Main Stage",
     desc: "",
     type: "Special",
     highlight: true,
-    isRegistrationOpen: false,
-    solo: true,
-    rules:
-      "https://drive.google.com/file/d/1gQ3qLqtHFOwS5M8m3zBKvh5Rvel-mB15/view?usp=sharing",
   },
   13: {
     id: "13",
