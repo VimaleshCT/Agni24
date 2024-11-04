@@ -1199,7 +1199,7 @@ A rapid-fire question-and-answer session. Questions are asked to a team, and if 
   },
   49: {
     id: "49",
-    time: "10:30 P.M – 4:30 P.M",
+    time: "10:30 A.M – 4:30 P.M",
     title: "Chess 960",
     type: "Game",
     venue: "Red Building",
@@ -1211,50 +1211,672 @@ A rapid-fire question-and-answer session. Questions are asked to a team, and if 
     id: "50",
     slotId: "6",
     title: "Concert Night",
-    figureSrc: "/media/events/singing.jpeg",
-    day: 2,
-    time: "18:30",
+    figureSrc: "/media/events/dj.jpeg",
+    day: 1,
+    time: "6.30 P.M – 9.30 P.M ",
     venue: "Main Stage",
     desc: "",
     type: "Contest",
     highlight: true,
-    rules: "https://github.com/nit-ap/atulyam/blob/main/README.md",
   },
-  51: {
-    id: "51",
-    slotId: "5",
-    title: "Mr. and Ms. AGNI",
-    figureSrc: "/media/events/peasantry.jpeg",
+  54: {
+    id: "54",
+    time: "10:30 A.M – 12:30 P.M",
+    title: "QA Pop Culture Showdown (R1)",
+    venue: "Red Building LH-74",
     day: 2,
-    time: "17:00",
-    venue: "Main Stage",
-    desc: "",
+    desc: `
+A fun, new school take on Family Feud. Students team up with their friends (4 or 5 in a team) and participate in this rolling event.<br/>
+<br/>
+Teams head up against each other and nominate one player to answer a question based on a category.<br/>
+The team of the player who answers first gets to choose whether they want to answer questions from either of the two categories given to them. The remaining category is for the opposing team.<br/>
+<br/>
+Then the teams answer rapid-fire questions on their corresponding categories.<br/>
+- The teams can answer questions not from their category if the other team does not answer them, for additional points.<br/>
+- If the team with the privilege of choice doesn’t get a single question correct, they receive a handicap for the next round.<br/>
+<br/>
+The next round is based on the respective categories and includes a list-it-out question.<br/>
+The final round will be a long visual connect.<br/>
+<br/>
+After all teams are done, the teams with the three highest scores are announced as the winners. In case of a tie, the time taken for each round is considered.
+`,
     type: "Contest",
-    highlight: true,
-    isRegistrationOpen: false,
-    solo: true,
-    rules: "https://github.com/nit-ap/atulyam/blob/main/README.md",
+    figureSrc: "/media/events/pop.jpg",
   },
-  52: {
-    id: "52",
-    title: "Opening Act",
-    figureSrc: "/media/events/opening.jpg",
+  55: {
+    id: "55",
+    time: "10:30 A.M – 12:30 P.M",
+    title: "Hopscotch (R1)",
+    venue: "Red Building LH-72",
     day: 2,
-    time: "After Mr. and Ms. AGNI",
-    venue: "Main Stage",
-    desc: "",
-    type: "Event",
-    highlight: false,
+    desc: `Similar to Nondi, this game features hand and leg impressions drawn on the floor, adding a creative twist to the traditional format. Players navigate these impressions instead of numbered squares, enhancing engagement and strategy. Each impression represents a unique challenge, promoting coordination and balance. The objective is to traverse the patterns while avoiding missteps and reaching the finish line first!`,
+    type: "Game",
+    figureSrc: "/media/events/hopscotch.jpeg",
   },
-  53: {
-    id: "53",
+  56: {
+    id: "56",
+    time: "10:30 A.M – 12:30 P.M",
+    title: "Natural Escape Room",
+    venue: "Red Building",
+    day: 2,
+    desc: `
+Number of Puzzles: 5-7 eco-themed puzzles.<br/>
+<br/>
+Example Puzzles:<br/>
+1. Environmental Quiz Lock.<br/>
+2. Water Conservation Riddle.<br/>
+3. Recycling Code Breaker.<br/>
+4. Renewable Energy Circuit.<br/>
+5. GIS Forest Map Puzzle.<br/>
+<br/>
+Storyline: Save the environment by solving nature's mysteries before time runs out (45-60 mins).<br/>
+<br/>
+Flow: Introduction, solving puzzles in sequence, and completing the challenge to "escape."<br/>
+<br/>
+Venue: Room or outdoor space with different stations.<br/>
+<br/>
+Puzzle Stations: Create stations for each puzzle, guiding teams to progress through them.
+`,
+    type: "Game",
+    figureSrc: "/media/events/escape.jpg",
+  },
+  57: {
+    id: "57",
+    time: "10:30 A.M – 12:30 P.M",
+    title: "Follow the Moves (R1)",
+    venue: "Red Building",
+    day: 2,
+    desc: `
+Follow the Moves - Unleash Your Inner Dancer<br/>
+<br/>
+Join us for "Follow the Moves," an exciting dance competition where rhythm, creativity, and fun collide!<br/>
+<br/>
+Participants will showcase their skills in styles like Western, Bharatanatyam, and Kathak.<br/>
+Earn the chance to dance with a friend by solving a tongue twister!<br/>
+<br/>
+In the thrilling Memory Dance Challenge, pairs will test their recall and rhythm as they build an unforgettable dance sequence together.<br/>
+<br/>
+Get ready for an electrifying atmosphere filled with cheers and laughter, where every step brings you closer to victory!<br/>
+Don’t miss out on the chance to shine—step up and show us your moves!
+`,
+    type: "Game",
+    figureSrc: "/media/events/moves.jpg",
+  },
+  58: {
+    id: "58",
+    time: "10:30 A.M – 12:30 P.M",
+    title: "Punch Dialogues (R1)",
+    venue: "Red Building",
+    day: 2,
+    desc: `
+This event requires a pair of participants.<br/>
+<br/>
+They will be given a Tamil cinema dialogue translated into English.<br/>
+One person will be the guesser, and the other person will be enacting on stage to help the guesser say the dialogue.<br/>
+<br/>
+The pair that identifies the maximum number of dialogues within the given time will be declared the winners.<br/>
+<br/>
+This will be a single-round event.
+`,
+    type: "Game",
+    figureSrc: "/media/events/dialogue.jpg",
+  },
+  59: {
+    id: "59",
+    time: "10:30 A.M – 12:30 P.M",
+    title: "Chromatic Chronicles (R1)",
+    venue: "Red Building",
+    day: 2,
+    desc: `
+Participants will have to come up with 7 pictures of each color from the series and create a color wheel towards the end.<br/>
+<br/>
+This activity takes place on campus within the given time limit.<br/>
+<br/>
+They may also include symbolic representations of those colors or emotions associated with each color!
+`,
+    type: "Game",
+    figureSrc: "/media/events/chronicles.jpg",
+  },
+  60: {
+    id: "60",
+    time: "10:30 A.M – 12:30 P.M",
+    title: "Speech Chameleon (R1)",
+    venue: "Red Building",
+    day: 2,
+    desc: `Participants are given a topic to speak about, the organizer assigns different speech
+emotions like anger, excitement, robotic, crying etc. at different time intervals.`,
+    type: "Game",
+    figureSrc: "/media/events/speech.jpeg",
+  },
+  61: {
+    id: "61",
+    time: "10:30 A.M – 12:30 P.M",
+    title: "Saas Events (R1)",
+    venue: "Red Building LH-74",
+    day: 2,
+    desc: ``,
+    type: "Contest",
+    figureSrc: "/media/events/saas_gold.png",
+  },
+  62: {
+    id: "62",
+    time: "10:30 A.M – 12:30 P.M",
+    title: "Family Feud (R1)",
+    venue: "Red Building LH-72",
+    day: 2,
+    desc: `
+Set Up Teams:<br/>
+- Two teams, typically of 3-5 players, are needed.<br/>
+- Teams sit on opposite sides, facing the host and the game board.<br/>
+<br/>
+Face-Off:<br/>
+- A player from each team steps forward to answer the first question.<br/>
+- The host reads a survey question (e.g., "Name the famous spot in our campus").<br/>
+- The first player to hit the buzzer gets a chance to answer.<br/>
+- The team with the highest-ranked answer gets to choose whether to play the round or pass it to the other team.<br/>
+<br/>
+Team Play:<br/>
+- If the team chooses to play, each member takes turns answering.<br/>
+- The goal is to guess all of the answers on the board based on popular responses to the survey.<br/>
+- If the team guesses incorrectly three times (3 strikes), the other team gets a chance to "steal."<br/>
+<br/>
+Stealing:<br/>
+- If the original team fails to guess all the answers, the opposing team can try to steal the points by giving one correct answer.<br/>
+- If the opposing team guesses correctly, they win the points. If they miss, the original team keeps their points.<br/>
+<br/>
+Scoring:<br/>
+- Points are based on the number of people who gave that answer in the survey.<br/>
+- After a set number of rounds (usually 4 or 5), the team with the most points moves on to the "Fast Money" round.<br/>
+<br/>
+Fast Money Round:<br/>
+- The winning team selects two players.<br/>
+- Player 1 is asked 5 rapid-fire questions and gives answers within a time limit.<br/>
+- Player 2 is asked the same questions but cannot repeat Player 1’s answers.<br/>
+- If both players together score a total of 200 points or more, the team wins the prize.
+`,
+    type: "Contest",
+    figureSrc: "/media/events/feud.jpg",
+  },
+  63: {
+    id: "63",
+    time: "10:30 A.M – 12:30 P.M",
+    title: "Rapid Ink (R1)",
+    venue: "Red Building",
+    day: 2,
+    desc: `A partial online event which starts off with an online written competition conducted as
+the the event’s first round and second goes on to begin with back to back rapid fire activities to
+determine the winner.
+`,
+    type: "Game",
+    figureSrc: "/media/events/rapid.jpg",
+  },
+  64: {
+    id: "64",
+    time: "10:30 A.M – 12:30 P.M",
+    title: "Escape Room (R1)",
+    venue: "Red Building",
+    day: 2,
+    desc: `
+Astronauts were set on a course to find a habitable planet, but during their cryo sleep, the software malfunctioned, and they ended up in a wrong star.<br/>
+The goal is to correct the course and check the possible evidence of life.<br/>
+<br/>
+<strong>Round 1:</strong><br/>
+- Setting the right course for the galaxy using the reference stars given in the image.<br/>
+- Send the probe to the planet: Finding the right coordinates (Number games).<br/>
+- Find the signs of life from the details sent by a probe to the planet (perceptual illusions).<br/>
+- Decode the signal.<br/>
+  (There will be two sets of questions, A and B, to minimize malpractice. Each set of questions will have different answers. For example, set A will give a clue for life, and set B will give a clue for water.)<br/>
+<br/>
+<strong>Round 2:</strong><br/>
+- Alien encounter: Decoding the signal sent by aliens (space pirates).<br/>
+- If an alien attacks your spaceship, the repaired part must be found by following the given clues.<br/>
+- After deflecting their attack, find your planet.<br/>
+- Locate the suitable landing spot.<br/>
+`,
+    type: "Game",
+    figureSrc: "/media/events/escape.jpg",
+  },
+  65: {
+    id: "65",
+    time: "10:30 A.M – 12:30 P.M",
+    title: "Connection Game (R1)",
+    venue: "Red Building",
+    day: 2,
+    desc: `
+    A creative and challenging word association game where players link seemingly unrelated words or concepts by identifying a common connection.<br/><br/>
+    
+    <strong>Setup:</strong><br/>
+    - Players can play individually or in teams.<br/>
+    - The moderator presents a series of clues, which may be words, phrases, or images, that all share a hidden connection.<br/><br/>
+    
+    <strong>Rounds:</strong><br/>
+    - Each round consists of a set of four clues.<br/>
+    - Players must figure out the connection between the clues, which could be a theme, category, or common word association.<br/><br/>
+    
+    <strong>Clue Examples:</strong><br/>
+    - Clues: Apple, Amazon, River, Table — <em>Connection:</em> They are all things you can "set."<br/>
+    - Clues: Shark, Superman, Space, Star — <em>Connection:</em> They are all names of famous movies.<br/>
+    `,
+    type: "Game",
+    figureSrc: "/media/events/connection.jpg",
+  },
+  66: {
+    id: "66",
+    time: "10:30 A.M – 12:30 P.M",
+    title: "Quality Spark (R1)",
+    venue: "Red Building",
+    day: 2,
+    desc: `This team-based competition consists of three rounds, with each team comprising three members.
+Teams will progress to the next round by successfully completing each stage and earning points along
+the way. The team with the highest points at the end of all rounds will be declared the winner.
+This event is a fusion of both fun activities and quality-related challenges, offering a blend of
+entertainment and learning. `,
+    type: "Game",
+    figureSrc: "/media/events/quality.jpeg",
+  },
+  67: {
+    id: "67",
+    time: "10:30 A.M – 12:30 P.M",
+    title: "Minutes to Win (R1)",
+    venue: "Red Building",
+    day: 2,
+    desc: `The one-minute challenge involves stacking cups blindfolded, testing both dexterity and spatial awareness. Participants must rely on their sense of touch and memory to build a stable tower. Time is limited, adding excitement and pressure to the task. The goal is to stack as many cups as possible within the minute!`,
+    type: "Contest",
+    figureSrc: "/media/events/minutes.jpg",
+  },
+  68: {
+    id: "68",
+    time: "10:30 A.M – 12:30 P.M",
+    title: "Melody Connect (R1)",
+    venue: "Red Building",
+    day: 2,
+    desc: `Prepare to immerse yourself in a world where music meets creativity! Melody Connects is not just
+about guessing; it's about deciphering melodies, beats, and tunes through vision. Teams will
+compete to interpret famous songs, musical instruments, and genres by connecting the images
+shown, challenging both their guessing and musical knowledge. Be aware, We are Saptham and
+there are specific questions that might sky rocket your scores`,
+    type: "Game",
+    figureSrc: "/media/events/melody.jpeg",
+  },
+  69: {
+    id: "69",
+    time: "10:30 A.M – 12:30 P.M",
+    title: "Blitz Chess",
+    venue: "Red Building",
+    day: 2,
+    desc: ``,
+    type: "Game",
+    figureSrc: "/media/events/chess.jpg",
+  },
+  70: {
+    id: "70",
+    time: "10:30 A.M – 12:30 P.M",
+    title: "QA Pop Culture Showdown (R2)",
+    venue: "Red Building LH-74",
+    day: 2,
+    desc: `
+A fun, new school take on Family Feud. Students team up with their friends (4 or 5 in a team) and participate in this rolling event.<br/>
+<br/>
+Teams head up against each other and nominate one player to answer a question based on a category.<br/>
+The team of the player who answers first gets to choose whether they want to answer questions from either of the two categories given to them. The remaining category is for the opposing team.<br/>
+<br/>
+Then the teams answer rapid-fire questions on their corresponding categories.<br/>
+- The teams can answer questions not from their category if the other team does not answer them, for additional points.<br/>
+- If the team with the privilege of choice doesn’t get a single question correct, they receive a handicap for the next round.<br/>
+<br/>
+The next round is based on the respective categories and includes a list-it-out question.<br/>
+The final round will be a long visual connect.<br/>
+<br/>
+After all teams are done, the teams with the three highest scores are announced as the winners. In case of a tie, the time taken for each round is considered.
+`,
+    type: "Contest",
+    figureSrc: "/media/events/pop.jpg",
+  },
+  71: {
+    id: "71",
+    time: "10:30 A.M – 12:30 P.M",
+    title: "Hopscotch (R2)",
+    venue: "Red Building LH-72",
+    day: 2,
+    desc: `Similar to Nondi, this game features hand and leg impressions drawn on the floor, adding a creative twist to the traditional format. Players navigate these impressions instead of numbered squares, enhancing engagement and strategy. Each impression represents a unique challenge, promoting coordination and balance. The objective is to traverse the patterns while avoiding missteps and reaching the finish line first!`,
+    type: "Game",
+    figureSrc: "/media/events/hopscotch.jpeg",
+  },
+  72: {
+    id: "72",
+    time: "10:30 A.M – 12:30 P.M",
+    title: "Natural Escape Room (R2)",
+    venue: "Red Building",
+    day: 2,
+    desc: `
+Number of Puzzles: 5-7 eco-themed puzzles.<br/>
+<br/>
+Example Puzzles:<br/>
+1. Environmental Quiz Lock.<br/>
+2. Water Conservation Riddle.<br/>
+3. Recycling Code Breaker.<br/>
+4. Renewable Energy Circuit.<br/>
+5. GIS Forest Map Puzzle.<br/>
+<br/>
+Storyline: Save the environment by solving nature's mysteries before time runs out (45-60 mins).<br/>
+<br/>
+Flow: Introduction, solving puzzles in sequence, and completing the challenge to "escape."<br/>
+<br/>
+Venue: Room or outdoor space with different stations.<br/>
+<br/>
+Puzzle Stations: Create stations for each puzzle, guiding teams to progress through them.
+`,
+    type: "Game",
+    figureSrc: "/media/events/escape.jpg",
+  },
+  73: {
+    id: "73",
+    time: "10:30 A.M – 12:30 P.M",
+    title: "Follow the Moves (R2)",
+    venue: "Red Building",
+    day: 2,
+    desc: `
+Follow the Moves - Unleash Your Inner Dancer<br/>
+<br/>
+Join us for "Follow the Moves," an exciting dance competition where rhythm, creativity, and fun collide!<br/>
+<br/>
+Participants will showcase their skills in styles like Western, Bharatanatyam, and Kathak.<br/>
+Earn the chance to dance with a friend by solving a tongue twister!<br/>
+<br/>
+In the thrilling Memory Dance Challenge, pairs will test their recall and rhythm as they build an unforgettable dance sequence together.<br/>
+<br/>
+Get ready for an electrifying atmosphere filled with cheers and laughter, where every step brings you closer to victory!<br/>
+Don’t miss out on the chance to shine—step up and show us your moves!
+`,
+    type: "Game",
+    figureSrc: "/media/events/moves.jpg",
+  },
+  74: {
+    id: "74",
+    time: "10:30 A.M – 12:30 P.M",
+    title: "Punch Dialogues (R2)",
+    venue: "Red Building",
+    day: 2,
+    desc: `
+    This event requires a pair of participants.<br/>
+    <br/>
+    They will be given a Tamil cinema dialogue translated into English.<br/>
+    One person will be the guesser, and the other person will be enacting on stage to help the guesser say the dialogue.<br/>
+    <br/>
+    The pair that identifies the maximum number of dialogues within the given time will be declared the winners.<br/>
+    <br/>
+    This will be a single-round event.
+    `,
+    type: "Game",
+    figureSrc: "/media/events/dialogue.jpg",
+  },
+  75: {
+    id: "75",
+    time: "10:30 A.M – 12:30 P.M",
+    title: "Chromatic Chronicles (R2)",
+    venue: "Red Building",
+    day: 2,
+    desc: `
+    Participants will have to come up with 7 pictures of each color from the series and create a color wheel towards the end.<br/>
+    <br/>
+    This activity takes place on campus within the given time limit.<br/>
+    <br/>
+    They may also include symbolic representations of those colors or emotions associated with each color!
+    `,
+    type: "Game",
+    figureSrc: "/media/events/chronicles.jpg",
+  },
+  76: {
+    id: "76",
+    time: "10:30 A.M – 12:30 P.M",
+    title: "Speech Chameleon (R2)",
+    venue: "Red Building",
+    day: 2,
+    desc: `Participants are given a topic to speak about, the organizer assigns different speech
+    emotions like anger, excitement, robotic, crying etc. at different time intervals.`,
+    type: "Game",
+    figureSrc: "/media/events/speech.jpeg",
+  },
+  77: {
+    id: "77",
+    time: "10:30 A.M – 12:30 P.M",
+    title: "Saas Events (R2)",
+    venue: "Red Building LH-74",
+    day: 2,
+    desc: ``,
+    type: "Contest",
+    figureSrc: "/media/events/saas_gold.png",
+  },
+  78: {
+    id: "78",
+    time: "10:30 A.M – 12:30 P.M",
+    title: "Family Feud (R2)",
+    venue: "Red Building LH-72",
+    day: 2,
+    desc: `
+Set Up Teams:<br/>
+- Two teams, typically of 3-5 players, are needed.<br/>
+- Teams sit on opposite sides, facing the host and the game board.<br/>
+<br/>
+Face-Off:<br/>
+- A player from each team steps forward to answer the first question.<br/>
+- The host reads a survey question (e.g., "Name the famous spot in our campus").<br/>
+- The first player to hit the buzzer gets a chance to answer.<br/>
+- The team with the highest-ranked answer gets to choose whether to play the round or pass it to the other team.<br/>
+<br/>
+Team Play:<br/>
+- If the team chooses to play, each member takes turns answering.<br/>
+- The goal is to guess all of the answers on the board based on popular responses to the survey.<br/>
+- If the team guesses incorrectly three times (3 strikes), the other team gets a chance to "steal."<br/>
+<br/>
+Stealing:<br/>
+- If the original team fails to guess all the answers, the opposing team can try to steal the points by giving one correct answer.<br/>
+- If the opposing team guesses correctly, they win the points. If they miss, the original team keeps their points.<br/>
+<br/>
+Scoring:<br/>
+- Points are based on the number of people who gave that answer in the survey.<br/>
+- After a set number of rounds (usually 4 or 5), the team with the most points moves on to the "Fast Money" round.<br/>
+<br/>
+Fast Money Round:<br/>
+- The winning team selects two players.<br/>
+- Player 1 is asked 5 rapid-fire questions and gives answers within a time limit.<br/>
+- Player 2 is asked the same questions but cannot repeat Player 1’s answers.<br/>
+- If both players together score a total of 200 points or more, the team wins the prize.
+`,
+    type: "Contest",
+    figureSrc: "/media/events/feud.jpg",
+  },
+  79: {
+    id: "79",
+    time: "10:30 A.M – 12:30 P.M",
+    title: "Rapid Ink (R2)",
+    venue: "Red Building",
+    day: 2,
+    desc: `A partial online event which starts off with an online written competition conducted as
+the the event’s first round and second goes on to begin with back to back rapid fire activities to
+determine the winner.
+`,
+    type: "Game",
+    figureSrc: "/media/events/rapid.jpg",
+  },
+  80: {
+    id: "80",
+    time: "10:30 A.M – 12:30 P.M",
+    title: "Escape Room (R2)",
+    venue: "Red Building",
+    day: 2,
+    desc: `
+Astronauts were set on a course to find a habitable planet, but during their cryo sleep, the software malfunctioned, and they ended up in a wrong star.<br/>
+The goal is to correct the course and check the possible evidence of life.<br/>
+<br/>
+<strong>Round 1:</strong><br/>
+- Setting the right course for the galaxy using the reference stars given in the image.<br/>
+- Send the probe to the planet: Finding the right coordinates (Number games).<br/>
+- Find the signs of life from the details sent by a probe to the planet (perceptual illusions).<br/>
+- Decode the signal.<br/>
+  (There will be two sets of questions, A and B, to minimize malpractice. Each set of questions will have different answers. For example, set A will give a clue for life, and set B will give a clue for water.)<br/>
+<br/>
+<strong>Round 2:</strong><br/>
+- Alien encounter: Decoding the signal sent by aliens (space pirates).<br/>
+- If an alien attacks your spaceship, the repaired part must be found by following the given clues.<br/>
+- After deflecting their attack, find your planet.<br/>
+- Locate the suitable landing spot.<br/>
+`,
+    type: "Game",
+    figureSrc: "/media/events/escape.jpg",
+  },
+  81: {
+    id: "81",
+    time: "10:30 A.M – 12:30 P.M",
+    title: "Connection Game (R2)",
+    venue: "Red Building",
+    day: 2,
+    desc: `
+    A creative and challenging word association game where players link seemingly unrelated words or concepts by identifying a common connection.<br/><br/>
+    
+    <strong>Setup:</strong><br/>
+    - Players can play individually or in teams.<br/>
+    - The moderator presents a series of clues, which may be words, phrases, or images, that all share a hidden connection.<br/><br/>
+    
+    <strong>Rounds:</strong><br/>
+    - Each round consists of a set of four clues.<br/>
+    - Players must figure out the connection between the clues, which could be a theme, category, or common word association.<br/><br/>
+    
+    <strong>Clue Examples:</strong><br/>
+    - Clues: Apple, Amazon, River, Table — <em>Connection:</em> They are all things you can "set."<br/>
+    - Clues: Shark, Superman, Space, Star — <em>Connection:</em> They are all names of famous movies.<br/>
+    `,
+    type: "Game",
+    figureSrc: "/media/events/connection.jpg",
+  },
+  82: {
+    id: "82",
+    time: "10:30 A.M – 12:30 P.M",
+    title: "Quality Spark (R2)",
+    venue: "Red Building",
+    day: 2,
+    desc: `This team-based competition consists of three rounds, with each team comprising three members.
+Teams will progress to the next round by successfully completing each stage and earning points along
+the way. The team with the highest points at the end of all rounds will be declared the winner.
+This event is a fusion of both fun activities and quality-related challenges, offering a blend of
+entertainment and learning. `,
+    type: "Game",
+    figureSrc: "/media/events/quality.jpeg",
+  },
+  83: {
+    id: "83",
+    time: "10:30 A.M – 12:30 P.M",
+    title: "Minutes to Win (R2)",
+    venue: "Red Building",
+    day: 2,
+    desc: `The one-minute challenge involves stacking cups blindfolded, testing both dexterity and spatial awareness. Participants must rely on their sense of touch and memory to build a stable tower. Time is limited, adding excitement and pressure to the task. The goal is to stack as many cups as possible within the minute!`,
+    type: "Contest",
+    figureSrc: "/media/events/minutes.jpg",
+  },
+  84: {
+    id: "84",
+    time: "10:30 A.M – 12:30 P.M",
+    title: "Melody Connect (R2)",
+    venue: "Red Building",
+    day: 2,
+    desc: `Prepare to immerse yourself in a world where music meets creativity! Melody Connects is not just
+about guessing; it's about deciphering melodies, beats, and tunes through vision. Teams will
+compete to interpret famous songs, musical instruments, and genres by connecting the images
+shown, challenging both their guessing and musical knowledge. Be aware, We are Saptham and
+there are specific questions that might sky rocket your scores`,
+    type: "Game",
+    figureSrc: "/media/events/melody.jpeg",
+  },
+  86: {
+    id: "86",
+    time: "5:45 PM – 6:15 PM",
+    title: "Sruthileya Performance",
+    venue: "Main Stage",
+    day: 2,
+    desc: ``,
+    type: "Performance",
+    figureSrc: "/media/events/sruthileya.jpg",
+  },
+  87: {
+    id: "87",
+    time: "6:15 PM – 6:35 PM",
+    title: "Saptham Performance",
+    venue: "Main Stage",
+    day: 2,
+    desc: ``,
+    type: "Performance",
+    figureSrc: "/media/events/saptham.jpg",
+  },
+  88: {
+    id: "88",
+    time: "6:35 PM – 7:00 PM",
+    title: "Spartanz Host Performance",
+    venue: "Main Stage",
+    day: 2,
+    desc: ``,
+    type: "Performance",
+    figureSrc: "/media/events/spartanz.heic",
+  },
+  89: {
+    id: "89",
+    time: "7:05 PM – 7:15 PM",
+    title: "Dance Winners Performance",
+    venue: "Main Stage",
+    day: 2,
+    desc: ``,
+    type: "Performance",
+    figureSrc: "/media/events/dance.jpeg",
+  },
+  90: {
+    id: "90",
+    time: "7:15 PM – 7:30 PM",
+    title: "Movie Team",
+    venue: "Main Stage",
+    day: 2,
+    desc: ``,
+    type: "Performance",
+    figureSrc: "/media/events/movieteam.jpeg",
+  },
+  91: {
+    id: "91",
+    time: "7:30 PM – 7:50 PM",
+    title: "Variety Winners Performance",
+    venue: "Main Stage",
+    day: 2,
+    desc: ``,
+    type: "Performance",
+    figureSrc: "/media/events/variety.jpg",
+  },
+  92: {
+    id: "92",
+    time: "7:55 PM – 8:10 PM",
+    title: "Twisters Host Performance",
+    venue: "Main Stage",
+    day: 2,
+    desc: ``,
+    type: "Performance",
+    figureSrc: "/media/events/twisters.jpg",
+  },
+  93: {
+    id: "93",
+    time: "8:15 PM – 9:30 PM",
+    title: "Talent of Agni",
+    venue: "Main Stage",
+    day: 2,
+    desc: ``,
+    type: "Performance",
+    figureSrc: "/media/events/talent.jpeg",
+  },
+  94: {
+    id: "94",
+    slotId: "6",
     title: "DJ Night",
     figureSrc: "/media/events/dj.jpeg",
     day: 2,
-    time: "After Opening Act",
+    time: "9.30 P.M – 10.00 P.M ",
     venue: "Main Stage",
     desc: "",
-    type: "Event",
+    type: "Performance",
     highlight: true,
   },
 };
@@ -1427,17 +2049,6 @@ export const events2 = {
     rules:
       "https://drive.google.com/file/d/1gQ3qLqtHFOwS5M8m3zBKvh5Rvel-mB15/view?usp=sharing",
   },
-  12: {
-    id: "12",
-    title: "Mr. and Ms. AGNI(Talent Round)",
-    figureSrc: "/media/events/peasantry.jpeg",
-    day: 1,
-    time: "16:30 - 18:00",
-    venue: "2nd Stage",
-    desc: "",
-    type: "Pre round for Mr. & Ms. AGNI",
-    highlight: false,
-  },
   13: {
     id: "13",
     title: "David Angu & The Tribe",
@@ -1464,32 +2075,7 @@ export const events2 = {
     solo: true,
     rules: "https://github.com/nit-ap/atulyam/blob/main/README.md",
   },
-  14: {
-    id: "14",
-    slotId: "5",
-    title: "Mr. and Ms. AGNI",
-    figureSrc: "/media/events/peasantry.jpeg",
-    day: 2,
-    time: "08.15",
-    venue: "Main Stage",
-    desc: "",
-    type: "Contest",
-    highlight: true,
-    isRegistrationOpen: false,
-    solo: true,
-    rules: "https://github.com/nit-ap/atulyam/blob/main/README.md",
-  },
-  15: {
-    id: "15",
-    title: "Opening Act",
-    figureSrc: "/media/events/opening.jpg",
-    day: 2,
-    time: "Mr. and Ms. AGNI",
-    venue: "Main Stage",
-    desc: "",
-    type: "Event",
-    highlight: false,
-  },
+
   16: {
     id: "16",
     title: "DJ Night",
