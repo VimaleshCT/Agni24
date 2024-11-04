@@ -1,12 +1,12 @@
 import styles from "../styles/Footer.module.scss";
 import logo from "../assets/agni.png";
-import echoOfArunachal from "../media/logo/echo_arunachal.png";
-import hotelObsidianBlue from "../media/logo/hotel-obsidian-blue.png";
-import bye from "../media/bye.png";
 import cx from "classnames";
 import { ReactComponent as MailIcon } from "../media/icons/mail.svg";
 import { ReactComponent as WAIcon } from "../media/icons/wa.svg";
 import { useState } from "react";
+import kraftonLogo from "../assets/sponsor/krafton.png";
+import rajamsLogo from "../assets/sponsor/rajams.png";
+
 
 const Footer = () => {
   const [devTeam, setDevTeam] = useState(false);
@@ -33,16 +33,16 @@ const Footer = () => {
                 Our Sponsors
               </p>
               <div className={styles.sponsorImgs}>
-                {/* <img
+                <img
                   className={styles.sponsors}
-                  src={echoOfArunachal}
+                  src={kraftonLogo}
                   alt=""
                 ></img>
                 <img
                   className={styles.sponsors}
-                  src={hotelObsidianBlue}
+                  src={rajamsLogo}
                   alt=""
-                ></img> */}
+                ></img>
               </div>
             </div>
           </div>
