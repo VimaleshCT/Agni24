@@ -23,6 +23,20 @@ const Events = ({ user }) => {
   const [currentDay, setCurrentDay] = useState(0);
   const [activeEventId, setActiveEventId] = useState(null);
 
+  // State for popup
+  const [popupEvent, setPopupEvent] = useState(null);
+  const [isPopupVisible, setIsPopupVisible] = useState(false);
+
+  const handleEventClick = (eventData) => {
+    setPopupEvent(eventData);
+    setIsPopupVisible(true);
+  };
+
+  const closePopup = () => {
+    setIsPopupVisible(false);
+    setPopupEvent(null);
+  };
+
   useEffect(() => {
     const wrapper = eventFigureWrapper.current;
     const figures = document.querySelectorAll(`.${styles["current-figure"]}`);
@@ -135,6 +149,7 @@ const Events = ({ user }) => {
                   key={id}
                   {...events[id]}
                   handleHover={setActiveEventId}
+                  handleEventClick={handleEventClick} // Pass click handler
                 />
               ))}
           </ul>
@@ -156,6 +171,8 @@ const Events = ({ user }) => {
       <div className="container">
         <SupportLink />
       </div>
+
+      {isPopupVisible && <Popup event={popupEvent} onClose={closePopup} />}
     </motion.div>
   );
 };
@@ -183,17 +200,16 @@ const EventLI = ({
   venue,
   time,
   handleHover,
+  handleEventClick, // New prop for click handler
+  desc, // Assume events have a description property
 }) => {
   return (
     <li className={cx(styles["event-li"])}>
       <article
         className={styles["event-li-inner"]}
-        onMouseOut={(e) => {
-          handleHover(null);
-        }}
-        onMouseOver={(e) => {
-          handleHover(id);
-        }}
+        onMouseOut={() => handleHover(null)}
+        onMouseOver={() => handleHover(id)}
+        onClick={() => handleEventClick({ id, title, type, venue, time, desc })} // Pass event data
       >
         <div className={styles.title}>
           {type === "Contest" ? (
@@ -234,7 +250,7 @@ const EventFigure = ({ id, title, figureSrc, isActive = false }) => {
       <article
         key={id}
         className={cx(styles["current-figure"], {
-          [styles.active]: isActive || isHovered, // Active if hovered
+          [styles.active]: isActive || isHovered,
         })}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
@@ -246,4 +262,40 @@ const EventFigure = ({ id, title, figureSrc, isActive = false }) => {
     )
   );
 };
+
+const Popup = ({ event, onClose }) => {
+  return (
+    <div className={styles["popup-overlay"]} onClick={onClose}>
+      <div
+        className={styles["popup-content"]}
+        onClick={(e) => e.stopPropagation()}
+      >
+        <button className={styles["close-button"]} onClick={onClose}>
+          &times;
+        </button>
+        <h3>{event.title}</h3>
+        <p>
+          <strong>Type:</strong> {event.type}
+        </p>
+        <p>
+          <strong>Venue:</strong> {event.venue}
+        </p>
+        <p>
+          <strong>Time:</strong> {event.time}
+        </p>
+        {event.desc && (
+          <p>
+            <strong>
+              Description
+              <br />
+            </strong>
+            {/* {event.desc} */}
+            <div dangerouslySetInnerHTML={{ __html: event.desc }} />
+          </p>
+        )}
+      </div>
+    </div>
+  );
+};
+
 export default Events;
