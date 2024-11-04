@@ -11,15 +11,6 @@
   align-items: center;
   overflow: hidden;
   z-index: 1;
-
-  /* Adjust padding on smaller screens */
-  @media (max-width: 768px) {
-    padding: 1.5rem;
-  }
-
-  @media (max-width: 480px) {
-    padding: 1rem;
-  }
 }
 
 .video-background {
@@ -44,15 +35,6 @@
   margin-bottom: 1rem;
   color: #f9a602;
   animation: slideDown 1s ease forwards;
-
-  /* Responsive font size for "Coming Soon" text */
-  @media (max-width: 768px) {
-    font-size: 2rem;
-  }
-
-  @media (max-width: 480px) {
-    font-size: 1.8rem;
-  }
 }
 
 .message {
@@ -60,54 +42,56 @@
   margin-bottom: 2rem;
   opacity: 0.8;
   animation: fadeIn 2s ease forwards;
-
-  /* Responsive font size for the message */
-  @media (max-width: 768px) {
-    font-size: 1rem;
-  }
-
-  @media (max-width: 480px) {
-    font-size: 0.9rem;
-  }
 }
 
-.animated-coming-soon {
+.sponsors {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
   justify-content: center;
-  animation: pulse 2s infinite;
+}
 
-  /* Adjust gap between letters for smaller screens */
-  @media (max-width: 480px) {
-    gap: 0.5rem;
+.sponsorCard {
+  position: relative;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 1.5rem;
+  max-width: 300px;
+  text-align: center;
+  backdrop-filter: blur(10px) saturate(150%);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(255, 255, 255, 0.2);
   }
 }
 
-.animated-coming-soon span {
-  font-size: 3rem;
-  font-weight: bold;
-  letter-spacing: 2px;
+.logo {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
 
-  /* Responsive font size for animated text */
-  @media (max-width: 768px) {
-    font-size: 2.5rem;
+.sponsorInfo {
+  h2 {
+    font-size: 1.5rem;
+    color: #f9a602;
+    margin-bottom: 0.5rem;
   }
 
-  @media (max-width: 480px) {
-    font-size: 2rem;
+  p {
+    font-size: 1.2rem;
+    color: #fff;
+    opacity: 0.9;
   }
 }
 
-.coming {
-  color: #ff6347;
-  animation: colorChange 1.5s infinite;
-}
-
-.soon {
-  color: #f9a602;
-  animation: colorChange 1.5s infinite alternate;
-}
-
+/* Keyframes for animations */
 @keyframes slideDown {
   from {
     opacity: 0;
@@ -125,27 +109,5 @@
   }
   to {
     opacity: 1;
-  }
-}
-
-@keyframes pulse {
-  0%,
-  100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-  }
-}
-
-@keyframes colorChange {
-  0% {
-    color: #ff6347;
-  }
-  50% {
-    color: #f9a602;
-  }
-  100% {
-    color: #ff6347;
   }
 }
