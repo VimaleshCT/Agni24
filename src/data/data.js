@@ -1122,6 +1122,7 @@ everyword within 10 min`,
     <br/>
     (There will be two sets of questions, A/B, to minimize malpractice. Each set of questions will have different answers. For example: Set A will give clues for life and Set B will give clues for water.)<br/>
     <br/>
+    <br>
     Round 2:<br/>
     - Alien encounter: Decoding the signal sent by aliens (space pirates).<br/>
     - If an alien attacked your spaceship, repaired parts will be found by the given clues.<br/>
@@ -1193,6 +1194,7 @@ Sequence of Events:<br/>
 4. **Crossword Puzzle Solving**: Participants must solve a crossword puzzle. The number of correct answers and the duration will be considered for evaluation.<br/>
 5. **Translation**: Translating English proverbs and famous quotes to Tamil.<br/>
 <br/>
+<br>
 Round 2:<br/>
 A rapid-fire question-and-answer session. Questions are asked to a team, and if they cannot answer, the question automatically passes to the next team. Total points scored by the team will be considered for evaluation.
 `,

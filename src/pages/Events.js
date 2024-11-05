@@ -27,6 +27,9 @@ const Events = ({ user }) => {
   const [popupEvent, setPopupEvent] = useState(null);
   const [isPopupVisible, setIsPopupVisible] = useState(false);
 
+  // Search state
+  const [searchQuery, setSearchQuery] = useState("");
+
   const handleEventClick = (eventData) => {
     setPopupEvent(eventData);
     setIsPopupVisible(true);
@@ -35,6 +38,10 @@ const Events = ({ user }) => {
   const closePopup = () => {
     setIsPopupVisible(false);
     setPopupEvent(null);
+  };
+
+  const handleSearchChange = (e) => {
+    setSearchQuery(e.target.value.toLowerCase());
   };
 
   useEffect(() => {
@@ -72,6 +79,15 @@ const Events = ({ user }) => {
     };
   }, [currentDay]);
 
+  // Filtered events based on the search query and selected day
+  const filteredEvents = Object.keys(events)
+    .filter(
+      (id) =>
+        events[id].day === currentDay &&
+        events[id].title.toLowerCase().includes(searchQuery)
+    )
+    .sort(timeCompare);
+
   return (
     <motion.div
       className={cx(styles.events, "page-transition", "container")}
@@ -108,6 +124,17 @@ const Events = ({ user }) => {
         </div>
       </header>
 
+      <div className={styles["search-bar"]}>
+        <span className={styles["search-icon"]}>🔍</span>
+        <input
+          type="text"
+          placeholder="Search events..."
+          value={searchQuery}
+          onChange={handleSearchChange}
+          className={styles["search-input"]}
+        />
+      </div>
+
       {/* Background Video Section */}
       <div className={styles["video-background"]}>
         <video
@@ -141,29 +168,24 @@ const Events = ({ user }) => {
           className={styles["event-list-wrapper"]}
         >
           <ul className={styles["event-list"]}>
-            {Object.keys(events)
-              .filter((id) => events[id].day === currentDay)
-              .sort(timeCompare)
-              .map((id) => (
-                <EventLI
-                  key={id}
-                  {...events[id]}
-                  handleHover={setActiveEventId}
-                  handleEventClick={handleEventClick} // Pass click handler
-                />
-              ))}
+            {filteredEvents.map((id) => (
+              <EventLI
+                key={id}
+                {...events[id]}
+                handleHover={setActiveEventId}
+                handleEventClick={handleEventClick} // Pass click handler
+              />
+            ))}
           </ul>
           <div className={styles["event-figures"]}>
             <div className={styles.figures}>
-              {Object.keys(events)
-                .filter((id) => events[id].day === currentDay)
-                .map((id) => (
-                  <EventFigure
-                    key={id}
-                    {...events[id]}
-                    isActive={activeEventId === id}
-                  />
-                ))}
+              {filteredEvents.map((id) => (
+                <EventFigure
+                  key={id}
+                  {...events[id]}
+                  isActive={activeEventId === id}
+                />
+              ))}
             </div>
           </div>
         </section>
