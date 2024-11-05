@@ -22,7 +22,7 @@ import download21 from "../assets/team/Nehavarthini_Marketing Core.jpg";
 import download22 from "../assets/team/Namitha_Sharan_Contents.jpg";
 import download23 from "../assets/team/Sankaranarayanan_Contents.jpeg";
 import download24 from "../assets/team/Vikrant_R_Technical.jpg";
-import download25 from "../assets/team/Vimalesh_CT_Technical.jpg";
+import download25 from "../assets/team/Vimalesh_CT_Technical1.jpg";
 import download26 from "../assets/team/T_Ponvel_Graphics Design.jpg";
 import download27 from "../assets/team/Sujatha_GDesign.jpg";
 import download28 from "../assets/team/Dineshraja D_Permissions & Documentation.jpg";
@@ -1939,8 +1939,7 @@ export const events2 = {
     highlight: true,
     solo: false,
   },
- 
- 
+
   11: {
     id: "11",
     slotId: "4",
