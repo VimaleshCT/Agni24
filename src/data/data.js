@@ -445,16 +445,15 @@ export const mainCoordinators = [
 ];
 
 export const highlights = ["1", "2", "8", "11", "14", "16"];
-
 export const events = {
   0: {
     id: "0",
-    title: "Inauguration",
-    figureSrc: "/media/events/inaugration.jpg",
+    title: "Traditional Arts (Chanda melam) and Wall Drop",
+    figureSrc: "/media/events/dance.jpeg",
     day: 0,
-    time: "03:15 PM - 03:45 PM",
+    time: "05:00 PM - 05:45 PM",
     venue: "Main Stage",
-    desc: "Traditional Arts (Chanda melam)",
+    desc: "",
     type: "Performance",
     highlight: false,
   },
@@ -464,7 +463,7 @@ export const events = {
     title: "Tamil Thaai Vazhthu",
     figureSrc: "/media/events/tamil.jpg",
     day: 0,
-    time: "03:45 PM - 03:50 PM",
+    time: "05:45 PM - 05:48 PM",
     venue: "Main Stage",
     desc: "",
     type: "Cultural",
@@ -473,10 +472,10 @@ export const events = {
   2: {
     id: "2",
     slotId: "1",
-    title: "Saptham Dance",
+    title: "Welcome Dance and Music by Saptham",
     figureSrc: "/media/events/saptham.jpg",
     day: 0,
-    time: "03:50 PM - 04:15 PM",
+    time: "05:50 PM - 06:10 PM",
     venue: "Main Stage",
     desc: "",
     type: "Dance",
@@ -488,7 +487,7 @@ export const events = {
     title: "Lighting the Kuthuvilaku",
     figureSrc: "/media/events/kuthuvelaku.jpg",
     day: 0,
-    time: "04:15 PM - 04:20 PM",
+    time: "06:10 PM - 06:05 PM",
     venue: "Main Stage",
     desc: "",
     type: "Ritual",
@@ -500,7 +499,7 @@ export const events = {
     title: "Welcome Address by Male President",
     figureSrc: "/media/events/speak.jpg",
     day: 0,
-    time: "04:20 PM - 04:25 PM",
+    time: "06:05 PM - 06:08 PM",
     venue: "Main Stage",
     desc: "",
     type: "Address",
@@ -512,7 +511,7 @@ export const events = {
     title: "Addressal by Dr. M. Pradeep Kumar",
     figureSrc: "/media/events/speak.jpg",
     day: 0,
-    time: "04:25 PM - 04:35 PM",
+    time: "06:08 PM - 06:12 PM",
     venue: "Main Stage",
     desc: "",
     type: "Address",
@@ -521,10 +520,10 @@ export const events = {
   6: {
     id: "6",
     slotId: "5",
-    title: "Addressal by Dr. Lenin Kalyanasundaram",
+    title: "Addressal by Dean",
     figureSrc: "/media/events/speak.jpg",
     day: 0,
-    time: "04:35 PM - 04:40 PM",
+    time: "06:12 PM - 06:15 PM",
     venue: "Main Stage",
     desc: "",
     type: "Address",
@@ -533,10 +532,10 @@ export const events = {
   7: {
     id: "7",
     slotId: "6",
-    title: "Addressal by Dean",
+    title: "Addressal by Chief Guest",
     figureSrc: "/media/events/speak.jpg",
     day: 0,
-    time: "04:40 PM - 04:45 PM",
+    time: "06:15 PM - 06:30 PM",
     venue: "Main Stage",
     desc: "",
     type: "Address",
@@ -545,67 +544,19 @@ export const events = {
   8: {
     id: "8",
     slotId: "7",
-    title: "Addressal by Registrar",
-    figureSrc: "/media/events/speak.jpg",
-    day: 0,
-    time: "04:45 PM - 05:00 PM",
-    venue: "Main Stage",
-    desc: "",
-    type: "Address",
-    highlight: false,
-  },
-  9: {
-    id: "9",
-    slotId: "8",
-    title: "Addressal by Vice-Chancellor",
-    figureSrc: "/media/events/speak.jpg",
-    day: 0,
-    time: "05:00 PM - 05:20 PM",
-    venue: "Main Stage",
-    desc: "",
-    type: "Address",
-    highlight: false,
-  },
-  10: {
-    id: "10",
-    slotId: "9",
-    title: "Addressal by Chief Guest",
-    figureSrc: "/media/events/speak.jpg",
-    day: 0,
-    time: "05:20 PM - 05:40 PM",
-    venue: "Main Stage",
-    desc: "",
-    type: "Address",
-    highlight: false,
-  },
-  11: {
-    id: "11",
-    slotId: "10",
     title: "Felicitation of the Cores",
     figureSrc: "/media/events/felicitation.jpg",
     day: 0,
-    time: "05:40 PM - 05:55 PM",
+    time: "06:10 PM - 06:25 PM",
     venue: "Main Stage",
     desc: "",
     type: "Ceremony",
     highlight: false,
   },
-  12: {
-    id: "12",
-    slotId: "11",
-    title: "Traditional Arts (Parai, Thappu, Mayil, Maadu, Oyil)",
-    figureSrc: "/media/events/dance.jpeg",
-    day: 0,
-    time: "06:00 PM - 06:25 PM",
-    venue: "Main Stage",
-    desc: "",
-    type: "Performance",
-    highlight: false,
-  },
-  13: {
-    id: "13",
-    slotId: "12",
-    title: "Vote of Thanks by Female President",
+  9: {
+    id: "9",
+    slotId: "8",
+    title: "Vote of Thanks by Dr. Lenin Kalyanasundaram",
     figureSrc: "/media/events/vote.jpg",
     day: 0,
     time: "06:25 PM - 06:28 PM",
@@ -614,9 +565,9 @@ export const events = {
     type: "Address",
     highlight: false,
   },
-  14: {
-    id: "14",
-    slotId: "13",
+  10: {
+    id: "10",
+    slotId: "9",
     title: "National Anthem",
     figureSrc: "/media/events/anthem.jpg",
     day: 0,
@@ -626,8 +577,8 @@ export const events = {
     type: "Ceremony",
     highlight: false,
   },
-  15: {
-    id: "15",
+  11: {
+    id: "11",
     title: "Movie Screening",
     figureSrc: "/media/events/theatre.jpg",
     day: 0,
@@ -661,7 +612,7 @@ export const events = {
     time: "10:30 A.M – 12:30 P.M",
     title: "Relay Pictionary Station Sprint (R1)",
     type: "Game",
-    venue: "Red Building LH-73",
+    venue: "Red Building - 73",
     desc: `Relay Pictionary Station Sprint is an engaging and fast-paced team challenge featuring two exciting rounds:<br/>
     Round 1: Pictionary<br/>
     Objective:<br/>
@@ -682,21 +633,12 @@ export const events = {
     day: 1,
     figureSrc: "/media/events/pictionary.png",
   },
-  20: {
-    id: "20",
-    time: "10:30 A.M – 3:00 P.M",
-    title: "Hunt and Click",
-    type: "Game",
-    venue: "Red Building LH-74",
-    day: 1,
-    figureSrc: "/media/events/hunt.png",
-  },
   21: {
     id: "21",
     time: "10:30 A.M – 12:30 P.M",
     title: "Wrong Answers Only (R1)",
     type: "Game",
-    venue: "Red Building LH-72",
+    venue: "Red Building - 72",
     day: 1,
     figureSrc: "/media/events/wrong.png",
     desc: `Easy general knowledge questions will be asked, but wrong answers only must be given<br/>
@@ -707,7 +649,7 @@ and the participants has to convince by making a logical explanation.`,
     time: "10:30 A.M – 12:30 P.M",
     title: "Vada Pochey (R1)",
     type: "Game",
-    venue: "Red Building",
+    venue: "Red Building - 76",
     day: 1,
     figureSrc: "/media/events/vadapochey.jpg",
     desc: `
@@ -721,7 +663,7 @@ Round 2 – Pictorial puzzles will be displayed on the projector; the person to 
     time: "10:30 A.M – 12:30 P.M",
     title: "Creative Collaboration (R1)",
     type: "Workshop",
-    venue: "Red Building",
+    venue: "Red Building - 75",
     day: 1,
     figureSrc: "/media/events/creative.png",
     desc: `
@@ -735,7 +677,7 @@ Teams must work together to weave their narrative within the time limit, and the
     time: "10:30 A.M – 12:30 P.M",
     title: "Lawyers Up (R1)",
     type: "Game",
-    venue: "Red Building",
+    venue: "Red Building - 84",
     day: 1,
     figureSrc: "/media/events/lawyer.jpg",
     desc: `
@@ -749,7 +691,7 @@ Get ready to bring justice to life!
     time: "10:30 A.M – 12:30 P.M",
     title: "Channel Surfing (R1)",
     type: "Game",
-    venue: "Red Building",
+    venue: "Red Building - 81",
     day: 1,
     figureSrc: "/media/events/channel.png",
     desc: `
@@ -763,7 +705,7 @@ The winners will be decided based on their spontaneity and teamwork.
     time: "10:30 A.M – 12:30 P.M",
     title: "Arcade Mania (R1)",
     type: "Game",
-    venue: "Red Building",
+    venue: "Red Building - 9",
     figureSrc: "/media/events/arcade.png",
     day: 1,
     desc: `
@@ -800,22 +742,22 @@ Participants have to carefully listen to the instructions and do the exact oppos
 Each set consists of 5 pictures depicting a film, person, or entity that will be given to the players to find. Points are based on the usage of the minimum number of hints.
 `,
   },
-  27: {
-    id: "27",
-    time: "1:30 P.M - 3:00 P.M",
-    title: "Saas Events",
-    type: "Social",
-    venue: "Red Building",
-    figureSrc: "/media/events/SAAS_silver.png",
-    day: 1,
-  },
+  // 27: {
+  //   id: "27",
+  //   time: "1:30 P.M - 3:00 P.M",
+  //   title: "Saas Events",
+  //   type: "Social",
+  //   venue: "Red Building",
+  //   figureSrc: "/media/events/SAAS_silver.png",
+  //   day: 1,
+  // },
   28: {
     id: "28",
     time: "1:30 P.M - 3:00 P.M",
     title: "Tech Charades with AI (R1)",
     type: "Game",
     figureSrc: "/media/events/charades.png",
-    venue: "Red Building",
+    venue: "Red Building - 73",
     day: 1,
     desc: `In this techy twist on charades, participants act out AI-generated tech-related
 terms or concepts, while their teams guess the word or phrase. Expect a lot of laughs as AI throws
@@ -826,7 +768,7 @@ quirky or difficult prompts into the mix! An easygoing, fun event that appeals t
     time: "1:30 P.M - 3:00 P.M",
     title: "Crossword Puzzle (R1)",
     type: "Game",
-    venue: "Red Building",
+    venue: "Red Building - 83",
     day: 1,
     figureSrc: "/media/events/crossword.jpg",
 
@@ -838,7 +780,7 @@ everyword within 10 min`,
     time: "1:30 P.M - 3:00 P.M",
     title: "Word Game (R1)",
     type: "Game",
-    venue: "Red Building",
+    venue: "Red Building - 76",
     figureSrc: "/media/events/wordgame.jpg",
     day: 1,
     desc: `
@@ -865,7 +807,7 @@ everyword within 10 min`,
     time: "1:30 P.M - 3:00 P.M",
     title: "Rescue Mission: A Musical Escape (R1)",
     type: "Game",
-    venue: "Red Building",
+    venue: "Red Building - 75",
     day: 1,
     figureSrc: "/media/events/rescue.jpg",
     desc: `
@@ -887,7 +829,7 @@ Rescue Mission: Once the lyric is decoded, players will receive the final clue l
     time: "1:30 P.M - 3:00 P.M",
     title: "Danger Zone (R1)",
     type: "Game",
-    venue: "Red Building",
+    venue: "Red Building - 82",
     day: 1,
     figureSrc: "/media/events/danger.jpg",
     desc: `
@@ -904,33 +846,29 @@ The team that survives wins!
   33: {
     id: "33",
     time: "1:30 P.M - 3:00 P.M",
-    title: "Order of Events (R1)",
+    title: "Come on kaipulla(R1)",
+    type: "Game",
+    venue: "Red Building - 74",
+    day: 1,
+    figureSrc: "/media/events/order.png",
+    desc: ``,
+  },
+  108: {
+    id: "108",
+    time: "10:30 A.M - 3:00 P.M",
+    title: "Hunt and click",
     type: "Game",
     venue: "Red Building",
     day: 1,
-    figureSrc: "/media/events/order.png",
-    desc: `
-Round 1:<br/>
-There will be a set of 5 events. Each team will pick a chit with a random sequence number.<br/>
-Participants must complete all 5 events in the given order. The total duration will be considered for selection for the next round.<br/>
-<br/>
-Sequence of Events:<br/>
-1. **Connexion with Bottle Flip**: Flip the bottle to get the question. Participants need to solve 5 questions.<br/>
-2. **Tamil Tongue Twisters**: There will be cups pasted on the wall holding different point values (100, 50, 20, 10). Players must repeat the tongue twister 3 to 5 times to earn the chance to throw a ball into the cup. They must score a total of 100 points, which can come from one question or a sum of questions.<br/>
-3. **Picture Puzzle Solving**: Solve a picture puzzle of a famous Tamil personality and speak about the personality for a minimum of 2 minutes.<br/>
-4. **Crossword Puzzle Solving**: Participants must solve a crossword puzzle. The number of correct answers and the duration will be considered for evaluation.<br/>
-5. **Translation**: Translating English proverbs and famous quotes to Tamil.<br/>
-<br/>
-Round 2:<br/>
-A rapid-fire question-and-answer session. Questions are asked to a team, and if they cannot answer, the question automatically passes to the next team. Total points scored by the team will be considered for evaluation.
-`,
+    figureSrc: "/media/events/hunt.png",
+    desc: ``,
   },
   34: {
     id: "34",
     time: "1:30 P.M – 2:30 P.M",
     title: "Relay Pictionary Station Sprint (R2)",
     type: "Game",
-    venue: "Red Building LH-73",
+    venue: "Red Building -51, LH-5",
     day: 1,
     figureSrc: "/media/events/pictionary.png",
     desc: `Relay Pictionary Station Sprint is an engaging and fast-paced team challenge featuring two exciting rounds:<br/>
@@ -951,21 +889,12 @@ A rapid-fire question-and-answer session. Questions are asked to a team, and if 
     If the team cannot guess the phrase in the allotted time, the question is skipped.
     `,
   },
-  35: {
-    id: "35",
-    time: "1:30 P.M – 2:30 P.M",
-    title: "Hunt and Click (R2)",
-    type: "Game",
-    venue: "Red Building LH-74",
-    figureSrc: "/media/events/hunt.png",
-    day: 1,
-  },
   36: {
     id: "36",
     time: "1:30 P.M – 2:30 P.M",
     title: "Wrong Answers Only (R2)",
     type: "Game",
-    venue: "Red Building LH-72",
+    venue: "Red Building - 72",
     day: 1,
     figureSrc: "/media/events/wrong.png",
 
@@ -977,7 +906,7 @@ and the participants has to convince by making a logical explanation.`,
     time: "1:30 P.M – 2:30 P.M",
     title: "Vada Pochey (R2)",
     type: "Game",
-    venue: "Red Building",
+    venue: "Red Building - 28, LH-2",
     day: 1,
     figureSrc: "/media/events/vadapochey.jpg",
     desc: `
@@ -991,7 +920,7 @@ and the participants has to convince by making a logical explanation.`,
     time: "1:30 P.M – 2:30 P.M",
     title: "Creative Collaboration (R2)",
     type: "Workshop",
-    venue: "Red Building",
+    venue: "Red Building - 29, LH - 1",
     day: 1,
     figureSrc: "/media/events/creative.png",
     desc: `
@@ -1005,7 +934,7 @@ Teams must work together to weave their narrative within the time limit, and the
     time: "1:30 P.M – 2:30 P.M",
     title: "Lawyers Up (R2)",
     type: "Game",
-    venue: "Red Building",
+    venue: "Red Building - 84",
     day: 1,
     figureSrc: "/media/events/lawyer.jpg",
     desc: `
@@ -1019,7 +948,7 @@ Get ready to bring justice to life!
     time: "1:30 P.M – 2:30 P.M",
     title: "Channel Surfing (R2)",
     type: "Game",
-    venue: "Red Building",
+    venue: "Red Building - 81",
     day: 1,
     figureSrc: "/media/events/channel.png",
     desc: `
@@ -1033,7 +962,7 @@ The winners will be decided based on their spontaneity and teamwork.
     time: "1:30 P.M – 2:30 P.M",
     title: "Arcade Mania (R2)",
     type: "Game",
-    venue: "Red Building",
+    venue: "Red Building - 9",
     day: 1,
     figureSrc: "/media/events/arcade.png",
     desc: `
@@ -1070,21 +999,21 @@ Participants have to carefully listen to the instructions and do the exact oppos
 Each set consists of 5 pictures depicting a film, person, or entity that will be given to the players to find. Points are based on the usage of the minimum number of hints.
 `,
   },
-  42: {
-    id: "42",
-    time: "1:30 P.M - 3:00 P.M",
-    title: "Saas Events (R2)",
-    type: "Social",
-    venue: "Red Building",
-    day: 1,
-    figureSrc: "/media/events/SAAS_silver.png",
-  },
+  // 42: {
+  //   id: "42",
+  //   time: "1:30 P.M - 3:00 P.M",
+  //   title: "Saas Events (R2)",
+  //   type: "Social",
+  //   venue: "Red Building",
+  //   day: 1,
+  //   figureSrc: "/media/events/SAAS_silver.png",
+  // },
   43: {
     id: "43",
     time: "1:30 P.M - 3:00 P.M",
     title: "Tech Charades with AI (R2)",
     type: "Game",
-    venue: "Red Building",
+    venue: "Red Building - 73",
     figureSrc: "/media/events/charades.png",
     day: 1,
     desc: `In this techy twist on charades, participants act out AI-generated tech-related
@@ -1096,7 +1025,7 @@ quirky or difficult prompts into the mix! An easygoing, fun event that appeals t
     time: "1:30 P.M - 3:00 P.M",
     title: "Crossword Puzzle (R2)",
     type: "Game",
-    venue: "Red Building",
+    venue: "Red Building - 83",
     day: 1,
     desc: `participants will be given pre typed crossword puzzle and should identify
 everyword within 10 min`,
@@ -1108,7 +1037,7 @@ everyword within 10 min`,
     time: "1:30 P.M - 3:00 P.M",
     title: "Word Game (R2)",
     type: "Game",
-    venue: "Red Building",
+    venue: "Red Building - 76",
     day: 1,
     desc: `
     Storyline: Astronauts were set on a course to find a habitable planet, but during their cryo sleep, the software malfunctioned, and they ended up in the wrong star.<br/>
@@ -1137,7 +1066,7 @@ everyword within 10 min`,
     time: "1:30 P.M - 3:00 P.M",
     title: "Rescue Mission: A Musical Escape (R2)",
     type: "Game",
-    venue: "Red Building",
+    venue: "Red Building - 75",
     day: 1,
     figureSrc: "/media/events/rescue.jpg",
     desc: `
@@ -1159,7 +1088,7 @@ Rescue Mission: Once the lyric is decoded, players will receive the final clue l
     time: "1:30 P.M - 3:00 P.M",
     title: "Danger Zone (R2)",
     type: "Game",
-    venue: "Red Building",
+    venue: "Red Building - 82",
     day: 1,
 
     figureSrc: "/media/events/danger.jpg",
@@ -1177,40 +1106,25 @@ The team that survives wins!
   48: {
     id: "48",
     time: "1:30 P.M - 3:00 P.M",
-    title: "Order of Events (R2)",
+    title: "Come on kaipulla (R2)",
     type: "Game",
-    venue: "Red Building",
+    venue: "Red Building - 74",
     day: 1,
     figureSrc: "/media/events/order.png",
-    desc: `
-Round 1:<br/>
-There will be a set of 5 events. Each team will pick a chit with a random sequence number.<br/>
-Participants must complete all 5 events in the given order. The total duration will be considered for selection for the next round.<br/>
-<br/>
-Sequence of Events:<br/>
-1. **Connexion with Bottle Flip**: Flip the bottle to get the question. Participants need to solve 5 questions.<br/>
-2. **Tamil Tongue Twisters**: There will be cups pasted on the wall holding different point values (100, 50, 20, 10). Players must repeat the tongue twister 3 to 5 times to earn the chance to throw a ball into the cup. They must score a total of 100 points, which can come from one question or a sum of questions.<br/>
-3. **Picture Puzzle Solving**: Solve a picture puzzle of a famous Tamil personality and speak about the personality for a minimum of 2 minutes.<br/>
-4. **Crossword Puzzle Solving**: Participants must solve a crossword puzzle. The number of correct answers and the duration will be considered for evaluation.<br/>
-5. **Translation**: Translating English proverbs and famous quotes to Tamil.<br/>
-<br/>
-<br>
-Round 2:<br/>
-A rapid-fire question-and-answer session. Questions are asked to a team, and if they cannot answer, the question automatically passes to the next team. Total points scored by the team will be considered for evaluation.
-`,
+    desc: ``,
   },
-  49: {
-    id: "49",
-    time: "10:30 A.M – 4:30 P.M",
-    title: "Chess 960",
-    type: "Game",
-    venue: "Red Building",
-    day: 1,
+  // 49: {
+  //   id: "49",
+  //   time: "10:30 A.M – 4:30 P.M",
+  //   title: "Chess 960",
+  //   type: "Game",
+  //   venue: "Red Building",
+  //   day: 1,
 
-    figureSrc: "/media/events/chess.jpg",
-  },
-  50: {
-    id: "50",
+  //   figureSrc: "/media/events/chess.jpg",
+  // },
+  53: {
+    id: "53",
     slotId: "6",
     title: "Concert Night",
     figureSrc: "/media/events/singing.jpeg",
@@ -1221,11 +1135,42 @@ A rapid-fire question-and-answer session. Questions are asked to a team, and if 
     type: "Special",
     highlight: true,
   },
+  50: {
+    id: "50",
+    title: "Solo Instrumental",
+    figureSrc: "/media/events/singing.jpeg",
+    day: 1,
+    time: "01:30 PM – 02:30 PM",
+    venue: "Vivekananda auditorium",
+    desc: "",
+    type: "Performance",
+    highlight: true,
+  },
+  51: {
+    id: "51",
+    title: "Solo Singing",
+    figureSrc: "/media/events/singing.jpeg",
+    day: 1,
+    time: "02:30 PM – 05:00 PM",
+    venue: "Vivekananda auditorium",
+    desc: "",
+    type: "Performance",
+    highlight: true,
+  },
+  110: {
+    id: "110",
+    time: "10:30 A.M – 04:00 P.M",
+    title: "Informals",
+    type: "Social",
+    venue: "Chemistry Dept",
+    day: 2,
+    figureSrc: "/media/events/informal.png",
+  },
   54: {
     id: "54",
     time: "10:30 A.M – 12:30 P.M",
     title: "QA Pop Culture Showdown (R1)",
-    venue: "Red Building LH-74",
+    venue: "Red Building - 72",
 
     day: 2,
     desc: `
@@ -1246,21 +1191,21 @@ After all teams are done, the teams with the three highest scores are announced 
     type: "Contest",
     figureSrc: "/media/events/pop.jpg",
   },
-  55: {
-    id: "55",
-    time: "10:30 A.M – 12:30 P.M",
-    title: "Hopscotch (R1)",
-    venue: "Red Building LH-72",
-    day: 2,
-    desc: `Similar to Nondi, this game features hand and leg impressions drawn on the floor, adding a creative twist to the traditional format. Players navigate these impressions instead of numbered squares, enhancing engagement and strategy. Each impression represents a unique challenge, promoting coordination and balance. The objective is to traverse the patterns while avoiding missteps and reaching the finish line first!`,
-    type: "Game",
-    figureSrc: "/media/events/hopscotch.jpeg",
-  },
+  // 55: {
+  //   id: "55",
+  //   time: "10:30 A.M – 12:30 P.M",
+  //   title: "Hopscotch (R1)",
+  //   venue: "Red Building LH-72",
+  //   day: 2,
+  //   desc: `Similar to Nondi, this game features hand and leg impressions drawn on the floor, adding a creative twist to the traditional format. Players navigate these impressions instead of numbered squares, enhancing engagement and strategy. Each impression represents a unique challenge, promoting coordination and balance. The objective is to traverse the patterns while avoiding missteps and reaching the finish line first!`,
+  //   type: "Game",
+  //   figureSrc: "/media/events/hopscotch.jpeg",
+  // },
   56: {
     id: "56",
     time: "10:30 A.M – 12:30 P.M",
     title: "Natural Escape Room",
-    venue: "Red Building",
+    venue: "Red Building - 73",
     day: 2,
     desc: `
 Number of Puzzles: 5-7 eco-themed puzzles.<br/>
@@ -1287,7 +1232,7 @@ Puzzle Stations: Create stations for each puzzle, guiding teams to progress thro
     id: "57",
     time: "10:30 A.M – 12:30 P.M",
     title: "Follow the Moves (R1)",
-    venue: "Red Building",
+    venue: "Red Building - 74",
     day: 2,
     desc: `
 Follow the Moves - Unleash Your Inner Dancer<br/>
@@ -1309,7 +1254,7 @@ Don’t miss out on the chance to shine—step up and show us your moves!
     id: "58",
     time: "10:30 A.M – 12:30 P.M",
     title: "Punch Dialogues (R1)",
-    venue: "Red Building",
+    venue: "Red Building - 9",
     day: 2,
     desc: `
 This event requires a pair of participants.<br/>
@@ -1328,7 +1273,7 @@ This will be a single-round event.
     id: "59",
     time: "10:30 A.M – 12:30 P.M",
     title: "Chromatic Chronicles (R1)",
-    venue: "Red Building",
+    venue: "Red Building - 75",
     day: 2,
     desc: `
 Participants will have to come up with 7 pictures of each color from the series and create a color wheel towards the end.<br/>
@@ -1344,28 +1289,38 @@ They may also include symbolic representations of those colors or emotions assoc
     id: "60",
     time: "10:30 A.M – 12:30 P.M",
     title: "Speech Chameleon (R1)",
-    venue: "Red Building",
+    venue: "Red Building - 76",
     day: 2,
     desc: `Participants are given a topic to speak about, the organizer assigns different speech
 emotions like anger, excitement, robotic, crying etc. at different time intervals.`,
     type: "Game",
     figureSrc: "/media/events/speech.jpeg",
   },
-  61: {
-    id: "61",
+  111: {
+    id: "111",
     time: "10:30 A.M – 12:30 P.M",
-    title: "Saas Events (R1)",
-    venue: "Red Building LH-74",
+    title: "Intra variety",
+    venue: "Vivekananda Auditorium",
     day: 2,
     desc: ``,
-    type: "Contest",
-    figureSrc: "/media/events/saas_gold.png",
+    type: "Performance",
+    figureSrc: "/media/events/saptham.jpg",
   },
+  // 61: {
+  //   id: "61",
+  //   time: "10:30 A.M – 12:30 P.M",
+  //   title: "Saas Events (R1)",
+  //   venue: "Red Building LH-74",
+  //   day: 2,
+  //   desc: ``,
+  //   type: "Contest",
+  //   figureSrc: "/media/events/saas_gold.png",
+  // },
   62: {
     id: "62",
     time: "10:30 A.M – 12:30 P.M",
     title: "Family Feud (R1)",
-    venue: "Red Building LH-72",
+    venue: "Red Building - 81",
     day: 2,
     desc: `
 Set Up Teams:<br/>
@@ -1404,7 +1359,7 @@ Fast Money Round:<br/>
     id: "63",
     time: "10:30 A.M – 12:30 P.M",
     title: "Rapid Ink (R1)",
-    venue: "Red Building",
+    venue: "Red Building - 84",
     day: 2,
     desc: `A partial online event which starts off with an online written competition conducted as
 the the event’s first round and second goes on to begin with back to back rapid fire activities to
@@ -1417,7 +1372,7 @@ determine the winner.
     id: "64",
     time: "10:30 A.M – 12:30 P.M",
     title: "Escape Room (R1)",
-    venue: "Red Building",
+    venue: "Red Building - 83",
     day: 2,
     desc: `
 Astronauts were set on a course to find a habitable planet, but during their cryo sleep, the software malfunctioned, and they ended up in a wrong star.<br/>
@@ -1443,7 +1398,7 @@ The goal is to correct the course and check the possible evidence of life.<br/>
     id: "65",
     time: "10:30 A.M – 12:30 P.M",
     title: "Connection Game (R1)",
-    venue: "Red Building",
+    venue: "Red Building - 82",
     day: 2,
     desc: `
     A creative and challenging word association game where players link seemingly unrelated words or concepts by identifying a common connection.<br/><br/>
@@ -1467,7 +1422,7 @@ The goal is to correct the course and check the possible evidence of life.<br/>
     id: "66",
     time: "10:30 A.M – 12:30 P.M",
     title: "Quality Spark (R1)",
-    venue: "Red Building",
+    venue: "Red Building - 75",
     day: 2,
     desc: `This team-based competition consists of three rounds, with each team comprising three members.
 Teams will progress to the next round by successfully completing each stage and earning points along
@@ -1477,21 +1432,21 @@ entertainment and learning. `,
     type: "Game",
     figureSrc: "/media/events/quality.jpeg",
   },
-  67: {
-    id: "67",
-    time: "10:30 A.M – 12:30 P.M",
-    title: "Minutes to Win (R1)",
-    venue: "Red Building",
-    day: 2,
-    desc: `The one-minute challenge involves stacking cups blindfolded, testing both dexterity and spatial awareness. Participants must rely on their sense of touch and memory to build a stable tower. Time is limited, adding excitement and pressure to the task. The goal is to stack as many cups as possible within the minute!`,
-    type: "Contest",
-    figureSrc: "/media/events/minutes.jpg",
-  },
+  // 67: {
+  //   id: "67",
+  //   time: "10:30 A.M – 12:30 P.M",
+  //   title: "Minutes to Win (R1)",
+  //   venue: "Red Building",
+  //   day: 2,
+  //   desc: `The one-minute challenge involves stacking cups blindfolded, testing both dexterity and spatial awareness. Participants must rely on their sense of touch and memory to build a stable tower. Time is limited, adding excitement and pressure to the task. The goal is to stack as many cups as possible within the minute!`,
+  //   type: "Contest",
+  //   figureSrc: "/media/events/minutes.jpg",
+  // },
   68: {
     id: "68",
     time: "10:30 A.M – 12:30 P.M",
     title: "Melody Connect (R1)",
-    venue: "Red Building",
+    venue: "Red Building - 73",
     day: 2,
     desc: `Prepare to immerse yourself in a world where music meets creativity! Melody Connects is not just
 about guessing; it's about deciphering melodies, beats, and tunes through vision. Teams will
@@ -1501,21 +1456,21 @@ there are specific questions that might sky rocket your scores`,
     type: "Game",
     figureSrc: "/media/events/melody.jpeg",
   },
-  69: {
-    id: "69",
-    time: "10:30 A.M – 12:30 P.M",
-    title: "Blitz Chess",
-    venue: "Red Building",
-    day: 2,
-    desc: ``,
-    type: "Game",
-    figureSrc: "/media/events/chess.jpg",
-  },
+  // 69: {
+  //   id: "69",
+  //   time: "10:30 A.M – 12:30 P.M",
+  //   title: "Blitz Chess",
+  //   venue: "Red Building",
+  //   day: 2,
+  //   desc: ``,
+  //   type: "Game",
+  //   figureSrc: "/media/events/chess.jpg",
+  // },
   70: {
     id: "70",
     time: "10:30 A.M – 12:30 P.M",
     title: "QA Pop Culture Showdown (R2)",
-    venue: "Red Building LH-74",
+    venue: "Red Building - 72",
     day: 2,
     desc: `
 A fun, new school take on Family Feud. Students team up with their friends (4 or 5 in a team) and participate in this rolling event.<br/>
@@ -1537,19 +1492,19 @@ After all teams are done, the teams with the three highest scores are announced 
   },
   71: {
     id: "71",
-    time: "10:30 A.M – 12:30 P.M",
-    title: "Hopscotch (R2)",
-    venue: "Red Building LH-72",
-    day: 2,
+    time: "10:30 A.M – 4:30 P.M",
+    title: "Hopscotch",
+    venue: "Alumni centre",
+    day: 1,
     desc: `Similar to Nondi, this game features hand and leg impressions drawn on the floor, adding a creative twist to the traditional format. Players navigate these impressions instead of numbered squares, enhancing engagement and strategy. Each impression represents a unique challenge, promoting coordination and balance. The objective is to traverse the patterns while avoiding missteps and reaching the finish line first!`,
-    type: "Game",
+    type: "Carnival",
     figureSrc: "/media/events/hopscotch.jpeg",
   },
   72: {
     id: "72",
     time: "10:30 A.M – 12:30 P.M",
     title: "Natural Escape Room (R2)",
-    venue: "Red Building",
+    venue: "Red Building – 29, LH - 1",
     day: 2,
     desc: `
 Number of Puzzles: 5-7 eco-themed puzzles.<br/>
@@ -1576,7 +1531,7 @@ Puzzle Stations: Create stations for each puzzle, guiding teams to progress thro
     id: "73",
     time: "10:30 A.M – 12:30 P.M",
     title: "Follow the Moves (R2)",
-    venue: "Red Building",
+    venue: "Red Building - 74",
     day: 2,
     desc: `
 Follow the Moves - Unleash Your Inner Dancer<br/>
@@ -1598,7 +1553,7 @@ Don’t miss out on the chance to shine—step up and show us your moves!
     id: "74",
     time: "10:30 A.M – 12:30 P.M",
     title: "Punch Dialogues (R2)",
-    venue: "Red Building",
+    venue: "Red Building - 9",
     day: 2,
     desc: `
     This event requires a pair of participants.<br/>
@@ -1617,7 +1572,7 @@ Don’t miss out on the chance to shine—step up and show us your moves!
     id: "75",
     time: "10:30 A.M – 12:30 P.M",
     title: "Chromatic Chronicles (R2)",
-    venue: "Red Building",
+    venue: "Red Building – 28, LH - 2",
     day: 2,
     desc: `
     Participants will have to come up with 7 pictures of each color from the series and create a color wheel towards the end.<br/>
@@ -1633,28 +1588,28 @@ Don’t miss out on the chance to shine—step up and show us your moves!
     id: "76",
     time: "10:30 A.M – 12:30 P.M",
     title: "Speech Chameleon (R2)",
-    venue: "Red Building",
+    venue: "Red Building - 76",
     day: 2,
     desc: `Participants are given a topic to speak about, the organizer assigns different speech
     emotions like anger, excitement, robotic, crying etc. at different time intervals.`,
     type: "Game",
     figureSrc: "/media/events/speech.jpeg",
   },
-  77: {
-    id: "77",
-    time: "10:30 A.M – 12:30 P.M",
-    title: "Saas Events (R2)",
-    venue: "Red Building LH-74",
-    day: 2,
-    desc: ``,
-    type: "Contest",
-    figureSrc: "/media/events/saas_gold.png",
-  },
+  // 77: {
+  //   id: "77",
+  //   time: "10:30 A.M – 12:30 P.M",
+  //   title: "Saas Events (R2)",
+  //   venue: "Red Building LH-74",
+  //   day: 2,
+  //   desc: ``,
+  //   type: "Contest",
+  //   figureSrc: "/media/events/saas_gold.png",
+  // },
   78: {
     id: "78",
     time: "10:30 A.M – 12:30 P.M",
     title: "Family Feud (R2)",
-    venue: "Red Building LH-72",
+    venue: "Red Building - 81",
     day: 2,
     desc: `
 Set Up Teams:<br/>
@@ -1693,7 +1648,7 @@ Fast Money Round:<br/>
     id: "79",
     time: "10:30 A.M – 12:30 P.M",
     title: "Rapid Ink (R2)",
-    venue: "Red Building",
+    venue: "Red Building - 84",
     day: 2,
     desc: `A partial online event which starts off with an online written competition conducted as
 the the event’s first round and second goes on to begin with back to back rapid fire activities to
@@ -1706,7 +1661,7 @@ determine the winner.
     id: "80",
     time: "10:30 A.M – 12:30 P.M",
     title: "Escape Room (R2)",
-    venue: "Red Building",
+    venue: "Red Building - 83",
     day: 2,
     desc: `
 Astronauts were set on a course to find a habitable planet, but during their cryo sleep, the software malfunctioned, and they ended up in a wrong star.<br/>
@@ -1732,7 +1687,7 @@ The goal is to correct the course and check the possible evidence of life.<br/>
     id: "81",
     time: "10:30 A.M – 12:30 P.M",
     title: "Connection Game (R2)",
-    venue: "Red Building",
+    venue: "Red Building - 82",
     day: 2,
     desc: `
     A creative and challenging word association game where players link seemingly unrelated words or concepts by identifying a common connection.<br/><br/>
@@ -1756,7 +1711,7 @@ The goal is to correct the course and check the possible evidence of life.<br/>
     id: "82",
     time: "10:30 A.M – 12:30 P.M",
     title: "Quality Spark (R2)",
-    venue: "Red Building",
+    venue: "Red Building - 75",
     day: 2,
     desc: `This team-based competition consists of three rounds, with each team comprising three members.
 Teams will progress to the next round by successfully completing each stage and earning points along
@@ -1766,21 +1721,141 @@ entertainment and learning. `,
     type: "Game",
     figureSrc: "/media/events/quality.jpeg",
   },
-  83: {
-    id: "83",
-    time: "10:30 A.M – 12:30 P.M",
-    title: "Minutes to Win (R2)",
-    venue: "Red Building",
+  // 83: {
+  //   id: "83",
+  //   time: "10:30 A.M – 4:30 P.M",
+  //   title: "Minutes to Win",
+  //   venue: "Red Building",
+  //   day: 1,
+  //   desc: `The one-minute challenge involves stacking cups blindfolded, testing both dexterity and spatial awareness. Participants must rely on their sense of touch and memory to build a stable tower. Time is limited, adding excitement and pressure to the task. The goal is to stack as many cups as possible within the minute!`,
+  //   type: "Contest",
+  //   figureSrc: "/media/events/minutes.jpg",
+  // },
+  130: {
+    id: "130",
+    time: "10:30 A.M – 4:30 P.M",
+    title: "Hopscotch",
+    venue: "Sports Ground",
     day: 2,
-    desc: `The one-minute challenge involves stacking cups blindfolded, testing both dexterity and spatial awareness. Participants must rely on their sense of touch and memory to build a stable tower. Time is limited, adding excitement and pressure to the task. The goal is to stack as many cups as possible within the minute!`,
-    type: "Contest",
-    figureSrc: "/media/events/minutes.jpg",
+    desc: `Similar to Nondi, this game features hand and leg impressions drawn on the floor, adding a creative twist to the traditional format. Players navigate these impressions instead of numbered squares, enhancing engagement and strategy. Each impression represents a unique challenge, promoting coordination and balance. The objective is to traverse the patterns while avoiding missteps and reaching the finish line first!`,
+    type: "Carnival",
+    figureSrc: "/media/events/hopscotch.jpeg",
+  },
+  100: {
+    id: "100",
+    time: "10:30 A.M – 4:30 P.M",
+    title: "Kekala konjam sathama",
+    venue: "Sports Ground",
+    day: 1,
+    desc: ``,
+    type: "Carnival",
+    // figureSrc: "/media/events/minutes.jpg",
+  },
+  131: {
+    id: "131",
+    time: "10:30 A.M – 4:30 P.M",
+    title: "Kekala konjam sathama ",
+    venue: "Sports Ground",
+    day: 2,
+    desc: ``,
+    type: "Carnival",
+    // figureSrc: "/media/events/minutes.jpg",
+  },
+  101: {
+    id: "101",
+    time: "10:30 A.M – 4:30 P.M",
+    title: "Vecha kuri thappadhu",
+    venue: "Sports Ground",
+    day: 1,
+    desc: ``,
+    type: "Carnival",
+    // figureSrc: "/media/events/minutes.jpg",
+  },
+  132: {
+    id: "132",
+    time: "10:30 A.M – 4:30 P.M",
+    title: "Vecha kuri thappadhu",
+    day: 2,
+    venue: "Sports Ground",
+    desc: ``,
+    type: "Carnival",
+    // figureSrc: "/media/events/minutes.jpg",
+  },
+  // 102: {
+  //   id: "102",
+  //   time: "10:30 A.M – 4:30 P.M",
+  //   title: "Vecha kuri thappadhu",
+  //   venue: "Red Building",
+  //   day: 1,
+  //   desc: ``,
+  //   type: "Carnival",
+  //   // figureSrc: "/media/events/minutes.jpg",
+  // },
+  103: {
+    id: "103",
+    time: "10:30 A.M – 4:30 P.M",
+    title: "Track the Cup",
+    venue: "Sports Ground",
+    day: 1,
+    desc: ``,
+    type: "Carnival",
+    // figureSrc: "/media/events/minutes.jpg",
+  },
+  133: {
+    id: "133",
+    time: "10:30 A.M – 4:30 P.M",
+    title: "Track the Cup",
+    venue: "Sports Ground",
+    day: 2,
+    desc: ``,
+    type: "Carnival",
+    // figureSrc: "/media/events/minutes.jpg",
+  },
+  104: {
+    id: "104",
+    time: "10:30 A.M – 4:30 P.M",
+    title: "Kolam potti",
+    venue: "Sports Ground",
+    day: 1,
+    desc: ``,
+    type: "Carnival",
+    // figureSrc: "/media/events/minutes.jpg",
+  },
+  134: {
+    id: "134",
+    time: "10:30 A.M – 4:30 P.M",
+    title: "Kolam potti",
+    venue: "Sports Ground",
+    day: 2,
+    desc: ``,
+    type: "Carnival",
+    // figureSrc: "/media/events/minutes.jpg",
+  },
+  105: {
+    id: "105",
+    time: "10:30 A.M – 4:30 P.M",
+    title: "Sack Race",
+    venue: "Sports Ground",
+    day: 1,
+    desc: ``,
+    type: "Carnival",
+    // figureSrc: "/media/events/minutes.jpg",
+  },
+  136: {
+    id: "136",
+    time: "10:30 A.M – 4:30 P.M",
+    title: "Sack Race",
+    venue: "Sports Ground",
+    day: 2,
+    desc: ``,
+    type: "Carnival",
+    // figureSrc: "/media/events/minutes.jpg",
   },
   84: {
     id: "84",
     time: "10:30 A.M – 12:30 P.M",
     title: "Melody Connect (R2)",
-    venue: "Red Building",
+    venue: "Red Building - 73",
     day: 2,
     desc: `Prepare to immerse yourself in a world where music meets creativity! Melody Connects is not just
 about guessing; it's about deciphering melodies, beats, and tunes through vision. Teams will
@@ -1789,6 +1864,36 @@ shown, challenging both their guessing and musical knowledge. Be aware, We are S
 there are specific questions that might sky rocket your scores`,
     type: "Game",
     figureSrc: "/media/events/melody.jpeg",
+  },
+  121: {
+    id: "121",
+    time: "01:30 PM – 02:30 PM",
+    title: "Solo Dance",
+    venue: "Vivekanada Auditorium",
+    day: 2,
+    desc: ``,
+    type: "Performance",
+    figureSrc: "/media/events/moves.jpg",
+  },
+  120: {
+    id: "120",
+    time: "02:30 PM – 03:30 PM",
+    title: "Duo Dance",
+    venue: "Vivekanada Auditorium",
+    day: 2,
+    desc: ``,
+    type: "Performance",
+    figureSrc: "/media/events/moves.jpg",
+  },
+  122: {
+    id: "122",
+    time: "03:30 PM – 04 :30 PM",
+    title: "Adaptunes",
+    venue: "Vivekanada Auditorium",
+    day: 2,
+    desc: ``,
+    type: "Performance",
+    figureSrc: "/media/events/moves.jpg",
   },
   86: {
     id: "86",
@@ -1820,16 +1925,16 @@ there are specific questions that might sky rocket your scores`,
     type: "Performance",
     figureSrc: "/media/events/spartanz.heic",
   },
-  89: {
-    id: "89",
-    time: "7:05 PM – 7:15 PM",
-    title: "Dance Winners Performance",
-    venue: "Main Stage",
-    day: 2,
-    desc: ``,
-    type: "Performance",
-    figureSrc: "/media/events/dance.jpeg",
-  },
+  // 89: {
+  //   id: "89",
+  //   time: "7:05 PM – 7:15 PM",
+  //   title: "Dance Winners Performance",
+  //   venue: "Main Stage",
+  //   day: 2,
+  //   desc: ``,
+  //   type: "Performance",
+  //   figureSrc: "/media/events/dance.jpeg",
+  // },
   90: {
     id: "90",
     time: "7:15 PM – 7:30 PM",
@@ -1870,18 +1975,6 @@ there are specific questions that might sky rocket your scores`,
     desc: ``,
     type: "Performance",
     figureSrc: "/media/events/talent.jpeg",
-  },
-  94: {
-    id: "94",
-    slotId: "6",
-    title: "DJ Night",
-    figureSrc: "/media/events/dj.jpeg",
-    day: 2,
-    time: "9.30 P.M – 10.00 P.M ",
-    venue: "Main Stage",
-    desc: "",
-    type: "Performance",
-    highlight: true,
   },
 };
 
@@ -1953,21 +2046,21 @@ export const events2 = {
     highlight: true,
   },
 
-  8: {
-    id: "8",
-    slotId: "6",
-    title: "SAAS Events",
-    figureSrc: "/media/events/cosplay.jpeg",
-    day: 2,
-    time: "01:30 pm",
-    venue: "Red Building",
-    desc: "",
-    type: "Event",
-    highlight: true,
-    isRegistrationOpen: false,
-    solo: true,
-    rules: "https://github.com/nit-ap/atulyam/blob/main/README.md",
-  },
+  // 8: {
+  //   id: "8",
+  //   slotId: "6",
+  //   title: "SAAS Events",
+  //   figureSrc: "/media/events/cosplay.jpeg",
+  //   day: 2,
+  //   time: "01:30 pm",
+  //   venue: "Red Building",
+  //   desc: "",
+  //   type: "Event",
+  //   highlight: true,
+  //   isRegistrationOpen: false,
+  //   solo: true,
+  //   rules: "https://github.com/nit-ap/atulyam/blob/main/README.md",
+  // },
 
   16: {
     id: "16",
