@@ -19,7 +19,7 @@ const CarouselCard = ({
             src={imgSrc}
             alt={name}
             onError={(e) => {
-              e.target.src = "path/to/fallback/image.jpg"; // Add your fallback image path here
+              e.target.src = "path/to/fallback/image.jpg"; 
             }}
           />
         </figure>

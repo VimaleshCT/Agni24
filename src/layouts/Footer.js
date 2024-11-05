@@ -27,7 +27,7 @@ const Footer = () => {
               <img src={logo} alt=""></img>
             </div>
           </div>
-          <div className={styles["sponsor-wrapper"]}>
+          {/* <div className={styles["sponsor-wrapper"]}>
             <div className={styles.sponsor}>
               <p style={{ textAlign: "center", fontSize: "1.2rem" }}>
                 Our Sponsors
@@ -45,7 +45,7 @@ const Footer = () => {
                 ></img>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className={styles.footerItems}>
           <div>
