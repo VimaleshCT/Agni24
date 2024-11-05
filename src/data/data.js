@@ -1218,7 +1218,7 @@ A rapid-fire question-and-answer session. Questions are asked to a team, and if 
     time: "06:30 P.M - 09.30 P.M",
     venue: "Main Stage",
     desc: "",
-    type: "Contest",
+    type: "Special",
     highlight: true,
   },
   54: {
@@ -1939,8 +1939,7 @@ export const events2 = {
     highlight: true,
     solo: false,
   },
- 
- 
+
   11: {
     id: "11",
     slotId: "4",

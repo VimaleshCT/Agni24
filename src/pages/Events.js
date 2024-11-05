@@ -239,6 +239,7 @@ const EventLI = ({
               {/* {isRegistrationOpen
                 ? "Registrations open!"
                 : "Registrations closed!"} */}
+              {type}
             </p>
           ) : (
             <p>{type} </p>
