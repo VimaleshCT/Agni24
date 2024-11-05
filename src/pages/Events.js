@@ -236,9 +236,9 @@ const EventLI = ({
         <div className={styles.title}>
           {type === "Contest" ? (
             <p className={cx({ [styles.closed]: !isRegistrationOpen })}>
-              {isRegistrationOpen
+              {/* {isRegistrationOpen
                 ? "Registrations open!"
-                : "Registrations closed!"}
+                : "Registrations closed!"} */}
             </p>
           ) : (
             <p>{type} </p>
