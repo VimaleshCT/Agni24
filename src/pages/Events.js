@@ -221,6 +221,7 @@ const EventLI = ({
   isRegistrationOpen,
   venue,
   time,
+  href,
   handleHover,
   handleEventClick, // New prop for click handler
   desc, // Assume events have a description property
@@ -231,7 +232,7 @@ const EventLI = ({
         className={styles["event-li-inner"]}
         onMouseOut={() => handleHover(null)}
         onMouseOver={() => handleHover(id)}
-        onClick={() => handleEventClick({ id, title, type, venue, time, desc })} // Pass event data
+        onClick={() => handleEventClick({ id, title, type, venue, time, desc ,href})} // Pass event data
       >
         <div className={styles.title}>
           {type === "Contest" ? (
@@ -251,6 +252,9 @@ const EventLI = ({
         </div>
         <div className={styles.time}>
           <p>{time}</p>
+        </div>
+        <div className={styles.href}>
+          <p>{href}</p>
         </div>
       </article>
     </li>

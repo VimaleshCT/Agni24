@@ -10,11 +10,10 @@ const HighlightCard = ({
   user,
   time,
   venue,
+  href,
   id,
 }) => (
   <NavLink to={`/events`} className={styles.cardLink}>
-    {" "}
-    {/* Wrap the entire card in a NavLink */}
     <article className={styles.card}>
       <figure>
         <img alt="" src={figureSrc} />
@@ -30,23 +29,21 @@ const HighlightCard = ({
           )}
         </div>
         <div className={styles.details}>
-          {" "}
-          {/* Display time and venue here */}
           <h4 className={styles.time}>{time}</h4>
           <h4 className={styles.venue}>{venue}</h4>
         </div>
+        {/* Show Register button only for Concert Night */}
+        {title === "Concert Night" && href && (
+          <a
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.registerButton}
+          >
+            Register
+          </a>
+        )}
       </main>
-      {type === "Contest" &&
-        isRegistrationOpen &&
-        (user ? (
-          <NavLink className={styles.link} to="/register">
-            Register
-          </NavLink>
-        ) : (
-          <NavLink className={styles.link} to="/signup">
-            Register
-          </NavLink>
-        ))}
     </article>
   </NavLink>
 );

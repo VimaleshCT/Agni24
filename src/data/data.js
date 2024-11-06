@@ -2038,6 +2038,7 @@ export const events2 = {
     slotId: "4",
     title: "Concert Night",
     figureSrc: "/media/events/singing.jpeg",
+    href: "https://forms.gle/4ZKHBXJpvdSsRukC6",
     day: 1,
     time: "06:30 pm - 09.30 pm",
     venue: "Main Stage",
