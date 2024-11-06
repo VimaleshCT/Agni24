@@ -2046,21 +2046,18 @@ export const events2 = {
     highlight: true,
   },
 
-  // 8: {
-  //   id: "8",
-  //   slotId: "6",
-  //   title: "SAAS Events",
-  //   figureSrc: "/media/events/cosplay.jpeg",
-  //   day: 2,
-  //   time: "01:30 pm",
-  //   venue: "Red Building",
-  //   desc: "",
-  //   type: "Event",
-  //   highlight: true,
-  //   isRegistrationOpen: false,
-  //   solo: true,
-  //   rules: "https://github.com/nit-ap/atulyam/blob/main/README.md",
-  // },
+  8: {
+    id: "8",
+    slotId: "6",
+    title: "SAAS Events",
+    figureSrc: "/media/events/cosplay.jpeg",
+    day: 2,
+    time: "01:30 pm",
+    venue: "Red Building",
+    desc: "",
+    type: "Event",
+    highlight: true,
+  },
 
   16: {
     id: "16",
@@ -2070,7 +2067,7 @@ export const events2 = {
     time: "09.30 pm",
     venue: "Main Stage",
     desc: "",
-    type: "Event",
+    type: "Special",
     highlight: true,
   },
   14: {
