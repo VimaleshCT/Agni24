@@ -36,7 +36,17 @@ const Footer = () => {
               <div className={styles.sponsorImgs}>
                 <img className={styles.sponsors} src={agsLogo} alt=""></img>
                 <img className={styles.sponsors} src={viralLogo} alt=""></img>
-                <img className={styles.sponsors} src={rajamsLogo} alt=""></img>
+                <a
+                  href="https://rajams.in/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    className={styles.sponsors}
+                    src={rajamsLogo}
+                    alt="Rajams Logo"
+                  />
+                </a>
               </div>
             </div>
           </div>

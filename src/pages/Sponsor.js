@@ -48,13 +48,13 @@ const Sponsor = () => (
           <div className={styles.cardFront}>
             <img src={viralLogo} alt="vf Logo" className={styles.logo} />
             <div className={styles.sponsorInfo}>
-              <h2>Refreshment Partner</h2>
+              <h2>Refreshment Sponsor</h2>
               <p>Viral Fission</p>
             </div>
           </div>
           <div className={styles.cardBack}>
             <h2>Thank you, Viral Fission!</h2>
-            <p>For being our Refreshment Partner</p>
+            <p>For being our Refreshment Sponsor</p>
           </div>
         </div>
       </div>
@@ -78,11 +78,19 @@ const Sponsor = () => (
       <div className={styles.sponsorCard}>
         <div className={styles.cardInner}>
           <div className={styles.cardFront}>
-            <img src={rajamsLogo} alt="Rajams Logo" className={styles.logo} />
-            <div className={styles.sponsorInfo}>
-              <h2>Printing Partner</h2>
-              <p>Rajams</p>
-            </div>
+            <a
+              href="https://rajams.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                className={styles.sponsors}
+                src={rajamsLogo}
+                alt="Rajams Logo"
+              />
+            </a>
+
+            
           </div>
           <div className={styles.cardBack}>
             <h2>Thank you, Rajams!</h2>
