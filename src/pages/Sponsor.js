@@ -31,13 +31,13 @@ const Sponsor = () => (
           <div className={styles.cardFront}>
             <img src={agsLogo} alt="AGS Logo" className={styles.logo} />
             <div className={styles.sponsorInfo}>
-              <h2>Official Multiplex Sponsor</h2>
+              <h2>Official Multiplex Partner</h2>
               <p>AGS Cinemas</p>
             </div>
           </div>
           <div className={styles.cardBack}>
             <h2>Thank you, AGS Cinemas!</h2>
-            <p>For being our Official Multiplex Sponsor</p>
+            <p>For being our Official Multiplex Partner</p>
           </div>
         </div>
       </div>
