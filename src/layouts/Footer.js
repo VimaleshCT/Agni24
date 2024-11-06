@@ -7,6 +7,7 @@ import { useState } from "react";
 import kraftonLogo from "../assets/sponsor/krafton.png";
 import rajamsLogo from "../assets/sponsor/rajams.png";
 import agsLogo from "../assets/sponsor/ags.png";
+import viralLogo from "../assets/sponsor/viral1.png";
 
 const Footer = () => {
   const [devTeam, setDevTeam] = useState(false);
@@ -33,16 +34,9 @@ const Footer = () => {
                 Our Sponsors
               </p>
               <div className={styles.sponsorImgs}>
-                <img
-                  className={styles.sponsors}
-                  src={agsLogo}
-                  alt=""
-                ></img>
-                {/* <img
-                  className={styles.sponsors}
-                  src={rajamsLogo}
-                  alt=""
-                ></img> */}
+                <img className={styles.sponsors} src={agsLogo} alt=""></img>
+                <img className={styles.sponsors} src={viralLogo} alt=""></img>
+                <img className={styles.sponsors} src={rajamsLogo} alt=""></img>
               </div>
             </div>
           </div>

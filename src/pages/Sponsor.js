@@ -4,6 +4,7 @@ import videoBg from "../assets/autumn-tree-cloudy-sky-sunset-moewalls-com.mp4";
 import kraftonLogo from "../assets/sponsor/krafton.png";
 import rajamsLogo from "../assets/sponsor/rajams.png";
 import agsLogo from "../assets/sponsor/ags.png";
+import viralLogo from "../assets/sponsor/viral.png";
 
 const Sponsor = () => (
   <div className={styles.container}>
@@ -42,6 +43,22 @@ const Sponsor = () => (
         </div>
       </div>
 
+      <div className={styles.sponsorCard}>
+        <div className={styles.cardInner}>
+          <div className={styles.cardFront}>
+            <img src={viralLogo} alt="vf Logo" className={styles.logo} />
+            <div className={styles.sponsorInfo}>
+              <h2>Refreshment Partner</h2>
+              <p>Viral Fission</p>
+            </div>
+          </div>
+          <div className={styles.cardBack}>
+            <h2>Thank you, Viral Fission!</h2>
+            <p>For being our Refreshment Partner</p>
+          </div>
+        </div>
+      </div>
+
       {/* <div className={styles.sponsorCard}>
         <div className={styles.cardInner}>
           <div className={styles.cardFront}>
@@ -58,7 +75,7 @@ const Sponsor = () => (
         </div>
       </div> */}
 
-      {/* <div className={styles.sponsorCard}>
+      <div className={styles.sponsorCard}>
         <div className={styles.cardInner}>
           <div className={styles.cardFront}>
             <img src={rajamsLogo} alt="Rajams Logo" className={styles.logo} />
@@ -72,7 +89,7 @@ const Sponsor = () => (
             <p>For being our Printing Partner</p>
           </div>
         </div>
-      </div> */}
+      </div>
     </div>
   </div>
 );

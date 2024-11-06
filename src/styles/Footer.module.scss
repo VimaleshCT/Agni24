@@ -131,21 +131,22 @@ footer {
   }
 
   .sponsor-wrapper {
-    .sponsor {
-      width: fit-content;
-      margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .sponsorImgs {
+      display: flex;
+      gap: 1rem; /* Space between logos */
+      flex-direction: row; /* Align logos side-by-side */
+      align-items: center;
+      justify-content: center;
     }
 
     .sponsors {
       height: 4rem;
-      margin: 0.4rem;
       width: auto;
-    }
-
-    .sponsorImgs {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 2rem;
+      margin: 0.5rem;
     }
   }
 }
