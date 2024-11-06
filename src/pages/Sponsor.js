@@ -89,8 +89,10 @@ const Sponsor = () => (
                 alt="Rajams Logo"
               />
             </a>
-
-            
+            <div className={styles.sponsorInfo}>
+              <h2>Refreshment Sponsor</h2>
+              <p>Viral Fission</p>
+            </div>
           </div>
           <div className={styles.cardBack}>
             <h2>Thank you, Rajams!</h2>
