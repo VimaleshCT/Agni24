@@ -80,13 +80,13 @@ const Sponsor = () => (
           <div className={styles.cardFront}>
             <img src={rajamsLogo} alt="Rajams Logo" className={styles.logo} />
             <div className={styles.sponsorInfo}>
-              <h2>Printing Partner</h2>
+              <h2>Printing Sponsor</h2>
               <p>Rajams</p>
             </div>
           </div>
           <div className={styles.cardBack}>
             <h2>Thank you, Rajams!</h2>
-            <p>For being our Printing Partner</p>
+            <p>For being our Printing Sponsor</p>
           </div>
         </div>
       </div>
