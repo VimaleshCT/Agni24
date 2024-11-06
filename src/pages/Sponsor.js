@@ -91,7 +91,7 @@ const Sponsor = () => (
             </a>
             <div className={styles.sponsorInfo}>
               <h2>Printing Partner</h2>
-              <p>Rajams</p>
+              <p>Rajams digital</p>
             </div>
           </div>
           <div className={styles.cardBack}>
