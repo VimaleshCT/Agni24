@@ -105,6 +105,14 @@ const Events = ({ user }) => {
     )
     .sort(timeCompare);
 
+  // Separate carnivals from other events in the filtering process
+  const carnivalEvents = filteredEvents.filter(
+    (id) => events[id].type.toLowerCase() === "carnival"
+  );
+  const nonCarnivalEvents = filteredEvents.filter(
+    (id) => events[id].type.toLowerCase() !== "carnival"
+  );
+
   return (
     <motion.div
       className={cx(styles.events, "page-transition", "container")}
@@ -180,12 +188,14 @@ const Events = ({ user }) => {
             ))}
           </ul>
         </nav>
+
+        {/* Non-Carnival Events Section */}
         <section
           ref={eventFigureWrapper}
           className={styles["event-list-wrapper"]}
         >
           <ul className={styles["event-list"]}>
-            {filteredEvents.map((id) => (
+            {nonCarnivalEvents.map((id) => (
               <EventLI
                 key={id}
                 {...events[id]}
@@ -196,7 +206,7 @@ const Events = ({ user }) => {
           </ul>
           <div className={styles["event-figures"]}>
             <div className={styles.figures}>
-              {filteredEvents.map((id) => (
+              {nonCarnivalEvents.map((id) => (
                 <EventFigure
                   key={id}
                   {...events[id]}
@@ -206,7 +216,36 @@ const Events = ({ user }) => {
             </div>
           </div>
         </section>
+
+        {/* Carnivals Section */}
+        {carnivalEvents.length > 0 && (
+          <section className={styles["event-list-wrapper"]}>
+            <h2 className={styles["carnival-heading"]}>Carnivals</h2>
+            <ul className={styles["event-list"]}>
+              {carnivalEvents.map((id) => (
+                <EventLI
+                  key={id}
+                  {...events[id]}
+                  handleHover={setActiveEventId}
+                  handleEventClick={handleEventClick} // Pass click handler
+                />
+              ))}
+            </ul>
+            <div className={styles["event-figures"]}>
+              <div className={styles.figures}>
+                {carnivalEvents.map((id) => (
+                  <EventFigure
+                    key={id}
+                    {...events[id]}
+                    isActive={activeEventId === id}
+                  />
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
       </main>
+
       <div className="container">
         <SupportLink />
       </div>

@@ -523,7 +523,6 @@ strong {
   color: #ffffff;
 }
 
-
 // Event List Register Button
 .register-button {
   display: block;
@@ -564,3 +563,13 @@ strong {
   }
 }
 
+.carnival-heading {
+  background-color: #007782; /* Bright yellow background */
+  margin-top: 6vh;
+  color: #fff; /* Dark text color for contrast */
+  padding: 10px 20px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 1.5rem;
+  border-radius: 5px;
+}
