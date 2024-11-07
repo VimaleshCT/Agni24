@@ -13,7 +13,7 @@ import adsLogo from "../assets/sponsor/ads.png";
 
 const Footer = () => {
   const [devTeam, setDevTeam] = useState(false);
-c
+
   return (
     <footer className="container" style={{ padding: 0, paddingTop: "1rem" }}>
       <div className={styles.MainFooterContent}>
