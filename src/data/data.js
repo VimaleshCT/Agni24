@@ -757,7 +757,7 @@ Each set consists of 5 pictures depicting a film, person, or entity that will be
     title: "Tech Charades with AI (R1)",
     type: "Game",
     figureSrc: "/media/events/charades.png",
-    venue: "Red Building - 73",
+    venue: "Red Building - 83",
     day: 1,
     desc: `In this techy twist on charades, participants act out AI-generated tech-related
 terms or concepts, while their teams guess the word or phrase. Expect a lot of laughs as AI throws
@@ -768,7 +768,7 @@ quirky or difficult prompts into the mix! An easygoing, fun event that appeals t
     time: "1:30 P.M - 3:00 P.M",
     title: "Crossword Puzzle (R1)",
     type: "Game",
-    venue: "Red Building - 83",
+    venue: "Red Building - 73",
     day: 1,
     figureSrc: "/media/events/crossword.jpg",
 
@@ -896,7 +896,7 @@ The team that survives wins!
   201: {
     id: "201",
     time: "10:30 A.M - 4:30 P.M",
-    title: "Gaming Zone",
+    title: "Gameverse Showdown",
     type: "Game",
     venue: "Hall No - 13",
     day: 2,
@@ -1053,7 +1053,7 @@ Each set consists of 5 pictures depicting a film, person, or entity that will be
     time: "1:30 P.M - 3:00 P.M",
     title: "Tech Charades with AI (R2)",
     type: "Game",
-    venue: "Red Building - 73",
+    venue: "Red Building - 83",
     figureSrc: "/media/events/charades.png",
     day: 1,
     desc: `In this techy twist on charades, participants act out AI-generated tech-related
@@ -1065,7 +1065,7 @@ quirky or difficult prompts into the mix! An easygoing, fun event that appeals t
     time: "1:30 P.M - 3:00 P.M",
     title: "Crossword Puzzle (R2)",
     type: "Game",
-    venue: "Red Building - 83",
+    venue: "Red Building - 73",
     day: 1,
     desc: `participants will be given pre typed crossword puzzle and should identify
 everyword within 10 min`,
@@ -1177,7 +1177,7 @@ The team that survives wins!
   },
   50: {
     id: "50",
-    title: "Solo Instrumental",
+    title: "Solo Singing",
     figureSrc: "/media/events/singing.jpeg",
     day: 1,
     time: "01:30 P.M – 02:30 P.M",
@@ -1188,7 +1188,7 @@ The team that survives wins!
   },
   51: {
     id: "51",
-    title: "Solo Singing",
+    title: "Duo Singing",
     figureSrc: "/media/events/singing.jpeg",
     day: 1,
     time: "02:30 P.M – 04:30 P.M",
@@ -1328,7 +1328,7 @@ They may also include symbolic representations of those colors or emotions assoc
   60: {
     id: "60",
     time: "10:30 A.M – 12:30 P.M",
-    title: "Speech Chameleon (R1)",
+    title: "Quotes and Emote (R1)",
     venue: "Red Building - 76",
     day: 2,
     desc: `Participants are given a topic to speak about, the organizer assigns different speech
@@ -1627,7 +1627,7 @@ Don’t miss out on the chance to shine—step up and show us your moves!
   76: {
     id: "76",
     time: "10:30 A.M – 12:30 P.M",
-    title: "Speech Chameleon (R2)",
+    title: "Quotes and Emote (R2)",
     venue: "Red Building - 76",
     day: 2,
     desc: `Participants are given a topic to speak about, the organizer assigns different speech
@@ -1981,6 +1981,17 @@ entertainment and learning. `,
     type: "Carnival",
     // figureSrc: "/media/events/minutes.jpg",
   },
+
+  // 300: {
+  //   id: "250",
+  //   time: "10:30 A.M – 4:30 P.M",
+  //   title: "Stall Street",
+  //   venue: "Hall No- 13",
+  //   day: 2,
+  //   desc: ``,
+  //   type: "Event",
+  //   // figureSrc: "/media/events/minutes.jpg",
+  // },
 
   84: {
     id: "84",
