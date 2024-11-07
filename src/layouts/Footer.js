@@ -6,7 +6,8 @@ import { ReactComponent as WAIcon } from "../media/icons/wa.svg";
 import { useState } from "react";
 import kraftonLogo from "../assets/sponsor/krafton.png";
 import rajamsLogo from "../assets/sponsor/rajams.png";
-
+import agsLogo from "../assets/sponsor/ags.png";
+import viralLogo from "../assets/sponsor/viral1.png";
 
 const Footer = () => {
   const [devTeam, setDevTeam] = useState(false);
@@ -27,25 +28,28 @@ const Footer = () => {
               <img src={logo} alt=""></img>
             </div>
           </div>
-          {/* <div className={styles["sponsor-wrapper"]}>
+          <div className={styles["sponsor-wrapper"]}>
             <div className={styles.sponsor}>
               <p style={{ textAlign: "center", fontSize: "1.2rem" }}>
                 Our Sponsors
               </p>
               <div className={styles.sponsorImgs}>
-                <img
-                  className={styles.sponsors}
-                  src={kraftonLogo}
-                  alt=""
-                ></img>
-                <img
-                  className={styles.sponsors}
-                  src={rajamsLogo}
-                  alt=""
-                ></img>
+                <img className={styles.sponsors} src={agsLogo} alt=""></img>
+                <img className={styles.sponsors} src={viralLogo} alt=""></img>
+                <a
+                  href="https://rajams.in/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    className={styles.sponsors}
+                    src={rajamsLogo}
+                    alt="Rajams Logo"
+                  />
+                </a>
               </div>
             </div>
-          </div> */}
+          </div>
         </div>
         <div className={styles.footerItems}>
           <div>

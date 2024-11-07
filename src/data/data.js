@@ -22,7 +22,7 @@ import download21 from "../assets/team/Nehavarthini_Marketing Core.jpg";
 import download22 from "../assets/team/Namitha_Sharan_Contents.jpg";
 import download23 from "../assets/team/Sankaranarayanan_Contents.jpeg";
 import download24 from "../assets/team/Vikrant_R_Technical.jpg";
-import download25 from "../assets/team/Vimalesh_CT_Technical1.jpg";
+import download25 from "../assets/team/Vimalesh_CT_Technical2.jpg";
 import download26 from "../assets/team/T_Ponvel_Graphics Design.jpg";
 import download27 from "../assets/team/Sujatha_GDesign.jpg";
 import download28 from "../assets/team/Dineshraja D_Permissions & Documentation.jpg";
@@ -2169,6 +2169,7 @@ export const events2 = {
     slotId: "4",
     title: "Concert Night",
     figureSrc: "/media/events/singing.jpeg",
+    href: "https://forms.gle/4ZKHBXJpvdSsRukC6",
     day: 1,
     time: "06:30 pm - 09.30 pm",
     venue: "Main Stage",
@@ -2177,21 +2178,18 @@ export const events2 = {
     highlight: true,
   },
 
-  // 8: {
-  //   id: "8",
-  //   slotId: "6",
-  //   title: "SAAS Events",
-  //   figureSrc: "/media/events/cosplay.jpeg",
-  //   day: 2,
-  //   time: "01:30 pm",
-  //   venue: "Red Building",
-  //   desc: "",
-  //   type: "Event",
-  //   highlight: true,
-  //   isRegistrationOpen: false,
-  //   solo: true,
-  //   rules: "https://github.com/nit-ap/atulyam/blob/main/README.md",
-  // },
+  8: {
+    id: "8",
+    slotId: "6",
+    title: "SAAS Events",
+    figureSrc: "/media/events/cosplay.jpeg",
+    day: 2,
+    time: "01:30 pm",
+    venue: "Red Building",
+    desc: "",
+    type: "Event",
+    highlight: true,
+  },
 
   16: {
     id: "16",
@@ -2201,7 +2199,7 @@ export const events2 = {
     time: "09.30 pm",
     venue: "Main Stage",
     desc: "",
-    type: "Event",
+    type: "Special",
     highlight: true,
   },
   14: {
