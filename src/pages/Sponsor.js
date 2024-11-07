@@ -5,6 +5,8 @@ import kraftonLogo from "../assets/sponsor/krafton.png";
 import rajamsLogo from "../assets/sponsor/rajams.png";
 import agsLogo from "../assets/sponsor/ags.png";
 import viralLogo from "../assets/sponsor/viral.png";
+import hgLogo from "../assets/sponsor/hg.png";
+import adsLogo from "../assets/sponsor/ads.png";
 
 const Sponsor = () => (
   <div className={styles.container}>
@@ -74,6 +76,38 @@ const Sponsor = () => (
           </div>
         </div>
       </div> */}
+
+      <div className={styles.sponsorCard}>
+        <div className={styles.cardInner}>
+          <div className={styles.cardFront}>
+            <img src={hgLogo} alt="vf Logo" className={styles.logo} />
+            <div className={styles.sponsorInfo}>
+              <h2>Merchandise Partner</h2>
+              <p>Hayati Garments</p>
+            </div>
+          </div>
+          <div className={styles.cardBack}>
+            <h2>Thank you, Hayati Garments!</h2>
+            <p>For being our Merchandise Partner</p>
+          </div>
+        </div>
+      </div>
+
+      <div className={styles.sponsorCard}>
+        <div className={styles.cardInner}>
+          <div className={styles.cardFront}>
+            <img src={adsLogo} alt="vf Logo" className={styles.logo} />
+            <div className={styles.sponsorInfo}>
+              <h2>Printing Partner</h2>
+              <p>123 Adprints</p>
+            </div>
+          </div>
+          <div className={styles.cardBack}>
+            <h2>Thank you, 123 Adprints!</h2>
+            <p>For being our Printing Partner</p>
+          </div>
+        </div>
+      </div>
 
       <div className={styles.sponsorCard}>
         <div className={styles.cardInner}>

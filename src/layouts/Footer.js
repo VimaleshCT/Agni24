@@ -8,6 +8,8 @@ import kraftonLogo from "../assets/sponsor/krafton.png";
 import rajamsLogo from "../assets/sponsor/rajams.png";
 import agsLogo from "../assets/sponsor/ags.png";
 import viralLogo from "../assets/sponsor/viral1.png";
+import hgLogo from "../assets/sponsor/hg.png";
+import adsLogo from "../assets/sponsor/ads.png";
 
 const Footer = () => {
   const [devTeam, setDevTeam] = useState(false);
@@ -35,7 +37,6 @@ const Footer = () => {
               </p>
               <div className={styles.sponsorImgs}>
                 <img className={styles.sponsors} src={agsLogo} alt=""></img>
-                <img className={styles.sponsors} src={viralLogo} alt=""></img>
                 <a
                   href="https://rajams.in/"
                   target="_blank"
@@ -47,6 +48,7 @@ const Footer = () => {
                     alt="Rajams Logo"
                   />
                 </a>
+                <img className={styles.sponsors} src={hgLogo} alt=""></img>
               </div>
             </div>
           </div>
