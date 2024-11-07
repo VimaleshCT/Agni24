@@ -4,7 +4,7 @@
   padding: 2rem;
   color: #fff;
   background-color: #0d0d0d;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -95,7 +95,7 @@
 
   .cardBack {
     transform: rotateY(180deg);
-    background: rgba(0, 0, 0, 0.8); /* Darker background on the back */
+    background: rgba(0, 0, 0, 0.8);
     color: #f9a602;
   }
 }
@@ -149,113 +149,66 @@
   }
 }
 
-// .container {
-//   position: relative;
-//   text-align: center;
-//   padding: 2rem;
-//   color: #fff;
-//   background-color: #0d0d0d;
-//   height: 100vh;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//   overflow: hidden;
-//   z-index: 1;
-// }
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+  .coming-soon {
+    font-size: 2rem;
+  }
 
-// .video-background {
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-//   overflow: hidden;
-//   z-index: -1;
-// }
+  .message {
+    font-size: 1rem;
+  }
 
-// .background-video {
-//   width: 100%;
-//   height: 100%;
-//   object-fit: cover;
-//   opacity: 1.6;
-// }
+  .sponsorCard {
+    width: 200px;
+    height: 250px;
+  }
 
-// .coming-soon {
-//   font-size: 2.5rem;
-//   margin-bottom: 1rem;
-//   color: #f9a602;
-//   animation: slideDown 1s ease forwards;
-// }
+  .logo {
+    max-width: 70%;
+  }
 
-// .message {
-//   font-size: 1.2rem;
-//   margin-bottom: 2rem;
-//   opacity: 0.8;
-//   animation: fadeIn 2s ease forwards;
-// }
+  .sponsorInfo h2,
+  .cardBack h2 {
+    font-size: 1.2rem;
+  }
 
-// .animated-coming-soon {
-//   display: flex;
-//   gap: 1rem;
-//   justify-content: center;
-//   animation: pulse 2s infinite;
-// }
+  .sponsorInfo p,
+  .cardBack p {
+    font-size: 0.9rem;
+  }
+}
 
-// .animated-coming-soon span {
-//   font-size: 3rem;
-//   font-weight: bold;
-//   letter-spacing: 2px;
-// }
+/* Extra Small Screens */
+@media screen and (max-width: 480px) {
+  .coming-soon {
+    font-size: 1.8rem;
+  }
 
-// .coming {
-//   color: #ff6347;
-//   animation: colorChange 1.5s infinite;
-// }
+  .message {
+    font-size: 0.9rem;
+  }
 
-// .soon {
-//   color: #f9a602;
-//   animation: colorChange 1.5s infinite alternate;
-// }
+  .sponsorCard {
+    width: 160px;
+    height: 200px;
+  }
 
-// @keyframes slideDown {
-//   from {
-//     opacity: 0;
-//     transform: translateY(-50px);
-//   }
-//   to {
-//     opacity: 1;
-//     transform: translateY(0);
-//   }
-// }
+  .logo {
+    max-width: 60%;
+  }
 
-// @keyframes fadeIn {
-//   from {
-//     opacity: 0;
-//   }
-//   to {
-//     opacity: 1;
-//   }
-// }
+  .sponsorInfo h2,
+  .cardBack h2 {
+    font-size: 1rem;
+  }
 
-// @keyframes pulse {
-//   0%,
-//   100% {
-//     transform: scale(1);
-//   }
-//   50% {
-//     transform: scale(1.05);
-//   }
-// }
+  .sponsorInfo p,
+  .cardBack p {
+    font-size: 0.8rem;
+  }
 
-// @keyframes colorChange {
-//   0% {
-//     color: #ff6347;
-//   }
-//   50% {
-//     color: #f9a602;
-//   }
-//   100% {
-//     color: #ff6347;
-//   }
-// }
+  .sponsors {
+    gap: 1rem;
+  }
+}
