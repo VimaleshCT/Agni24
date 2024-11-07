@@ -9,13 +9,30 @@ import { ReactComponent as LinkIcon } from "../media/icons/link.svg";
 import videoBg from "../assets/sword-in-forest-moewalls-com.mp4";
 
 const timeCompare = (a, b) => {
-  if (events[a].time < events[b].time) {
-    return -1;
-  } else if (events[a].time === events[b].time) {
-    return 0;
-  } else {
-    return 1;
+  const timeA = events[a].time.split("–")[0].trim(); // Extract start time
+  const timeB = events[b].time.split("–")[0].trim(); // Extract start time
+
+  const dateA = new Date(`1970-01-01T${convertTo24HourFormat(timeA)}:00`);
+  const dateB = new Date(`1970-01-01T${convertTo24HourFormat(timeB)}:00`);
+
+  return dateA - dateB;
+};
+
+// Helper function to convert 12-hour format to 24-hour format
+const convertTo24HourFormat = (time) => {
+  const [timePart, modifier] = time.split(" ");
+  let [hours, minutes] = timePart.split(":").map(Number);
+
+  if (modifier === "P.M" && hours !== 12) {
+    hours += 12;
+  } else if (modifier === "A.M" && hours === 12) {
+    hours = 0;
   }
+
+  return `${String(hours).padStart(2, "0")}:${String(minutes).padStart(
+    2,
+    "0"
+  )}`;
 };
 
 const Events = ({ user }) => {
@@ -232,7 +249,9 @@ const EventLI = ({
         className={styles["event-li-inner"]}
         onMouseOut={() => handleHover(null)}
         onMouseOver={() => handleHover(id)}
-        onClick={() => handleEventClick({ id, title, type, venue, time, desc ,href})} // Pass event data
+        onClick={() =>
+          handleEventClick({ id, title, type, venue, time, desc, href })
+        } // Pass event data
       >
         <div className={styles.title}>
           {type === "Contest" ? (
