@@ -48,7 +48,7 @@ const Footer = () => {
                     alt="Rajams Logo"
                   />
                 </a>
-                <img className={styles.sponsors} src={hgLogo} alt=""></img>
+                <img className={styles.sponsors} src={kraftonLogo} alt=""></img>
               </div>
             </div>
           </div>

@@ -9,6 +9,7 @@ import hgLogo from "../assets/sponsor/hg.png";
 import adsLogo from "../assets/sponsor/ads.png";
 import vetriLogo from "../assets/sponsor/vetri.png";
 import aacLogo from "../assets/sponsor/AACEG_.jpeg";
+import mediLogo from "../assets/sponsor/Medi.png";
 
 const Sponsor = () => (
   <div className={styles.container}>
@@ -157,13 +158,29 @@ const Sponsor = () => (
           <div className={styles.cardFront}>
             <img src={aacLogo} alt="aaceg Logo" className={styles.logo} />
             <div className={styles.sponsorInfo}>
-              <h2>t Sponsor</h2>
+              <h2>Supportive Sponsor</h2>
               <p>AACEG</p>
             </div>
           </div>
           <div className={styles.cardBack}>
             <h2>Thank you, AACEG!</h2>
-            <p>For being our Sponsor</p>
+            <p>For being our Supportive Sponsor</p>
+          </div>
+        </div>
+      </div>
+
+      <div className={styles.sponsorCard}>
+        <div className={styles.cardInner}>
+          <div className={styles.cardFront}>
+            <img src={mediLogo} alt="medi Logo" className={styles.logo} />
+            <div className={styles.sponsorInfo}>
+              <h2>Hygiene Sponsor</h2>
+              <p>Medimix</p>
+            </div>
+          </div>
+          <div className={styles.cardBack}>
+            <h2>Thank you, Medimix!</h2>
+            <p>For being our Hygiene Sponsor</p>
           </div>
         </div>
       </div>

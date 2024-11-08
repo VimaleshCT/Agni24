@@ -2225,10 +2225,10 @@ export const events2 = {
 
   16: {
     id: "16",
-    title: "DJ Night",
+    title: "Movie Team",
     figureSrc: "/media/events/dj.jpeg",
     day: 2,
-    time: "09.30 P.M",
+    time: "07.25 P.M",
     venue: "Main Stage",
     desc: "",
     type: "Special",
