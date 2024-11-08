@@ -7,6 +7,8 @@ import agsLogo from "../assets/sponsor/ags.png";
 import viralLogo from "../assets/sponsor/viral.png";
 import hgLogo from "../assets/sponsor/hg.png";
 import adsLogo from "../assets/sponsor/ads.png";
+import vetriLogo from "../assets/sponsor/vetri.png";
+import aacLogo from "../assets/sponsor/AACEG_.jpeg";
 
 const Sponsor = () => (
   <div className={styles.container}>
@@ -131,6 +133,37 @@ const Sponsor = () => (
           <div className={styles.cardBack}>
             <h2>Thank you, Rajams!</h2>
             <p>For being our Printing Partner</p>
+          </div>
+        </div>
+      </div>
+      <div className={styles.sponsorCard}>
+        <div className={styles.cardInner}>
+          <div className={styles.cardFront}>
+            <img src={vetriLogo} alt="vetri Logo" className={styles.logo} />
+            <div className={styles.sponsorInfo}>
+              <h2>Event Sponsor</h2>
+              <p>Vetri tours n travels</p>
+            </div>
+          </div>
+          <div className={styles.cardBack}>
+            <h2>Thank you, Vetri tours n travels!</h2>
+            <p>For being our Event Sponsor</p>
+          </div>
+        </div>
+      </div>
+
+      <div className={styles.sponsorCard}>
+        <div className={styles.cardInner}>
+          <div className={styles.cardFront}>
+            <img src={aacLogo} alt="aaceg Logo" className={styles.logo} />
+            <div className={styles.sponsorInfo}>
+              <h2>t Sponsor</h2>
+              <p>AACEG</p>
+            </div>
+          </div>
+          <div className={styles.cardBack}>
+            <h2>Thank you, AACEG!</h2>
+            <p>For being our Sponsor</p>
           </div>
         </div>
       </div>
