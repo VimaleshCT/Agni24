@@ -2226,7 +2226,7 @@ export const events2 = {
   16: {
     id: "16",
     title: "Movie Team",
-    figureSrc: "/media/events/dj.jpeg",
+    figureSrc: "/media/events/theatre.jpg",
     day: 2,
     time: "07.25 P.M",
     venue: "Main Stage",
