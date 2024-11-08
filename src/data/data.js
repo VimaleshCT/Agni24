@@ -451,7 +451,7 @@ export const events = {
     title: "Traditional Arts (Chanda melam) and Wall Drop",
     figureSrc: "/media/events/dance.jpeg",
     day: 0,
-    time: "05:00 P.M - 05:45 P.M",
+    time: "04:00 P.M - 05:30 P.M",
     venue: "Main Stage",
     desc: "",
     type: "Performance",
