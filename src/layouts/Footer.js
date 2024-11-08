@@ -4,7 +4,7 @@ import cx from "classnames";
 import { ReactComponent as MailIcon } from "../media/icons/mail.svg";
 import { ReactComponent as WAIcon } from "../media/icons/wa.svg";
 import { useState } from "react";
-import kraftonLogo from "../assets/sponsor/krafton.png";
+import kraftonLogo from "../assets/sponsor/krafton.jpg";
 import rajamsLogo from "../assets/sponsor/rajams.png";
 import agsLogo from "../assets/sponsor/ags.png";
 import viralLogo from "../assets/sponsor/viral1.png";
