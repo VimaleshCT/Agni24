@@ -61,7 +61,7 @@ const Sponsor = () => (
         </div>
       </div>
 
-      {/* <div className={styles.sponsorCard}>
+      <div className={styles.sponsorCard}>
         <div className={styles.cardInner}>
           <div className={styles.cardFront}>
             <img src={kraftonLogo} alt="Krafton Logo" className={styles.logo} />
@@ -75,7 +75,7 @@ const Sponsor = () => (
             <p>For being our Signature Events Sponsor</p>
           </div>
         </div>
-      </div> */}
+      </div>
 
       <div className={styles.sponsorCard}>
         <div className={styles.cardInner}>
